@@ -1,0 +1,6 @@
+0. refactor project, play, and scene to be type-safe
+1. clean up the pass-object-or-pass-title logic
+2. lift common logic (repr, etc) into superclass
+3. allow classes to be instantiated with their characters/scenes/plays, where possible
+4. add functional tests to project, play, and scene
+5. remove duplicate fixtures from test files -> refactor into imports
