@@ -1,6 +1,5 @@
 from collections import OrderedDict
 
-
 class App:
     def __init__(self):
         self.projects = OrderedDict()
@@ -20,6 +19,9 @@ class App:
         else:
             raise ValueError(f"{new_project.title} already exists in App")
 
-    def remove_project(self, project_obj):
-        if project_obj in self:
-            self.projects.pop(project_obj.title)
+    def remove_project(self, project_title):
+        if project_title in self:
+            self.projects.pop(project_title)
+
+    
+

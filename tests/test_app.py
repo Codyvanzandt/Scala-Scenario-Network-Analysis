@@ -52,8 +52,8 @@ def test_remove_project(default_app, default_project):
     default_app.add_project(default_project)
 
     # Case 1: extant project
-    default_app.remove_project(default_project)
+    default_app.remove_project(default_project.title)
     assert default_project not in default_app
 
     # Case 2: non-extant project; should quietly fail
-    default_app.remove_project(default_project)
+    default_app.remove_project(default_project.title)
