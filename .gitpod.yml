@@ -1,11 +1,9 @@
-image:
-  file: .gitpod.Dockerfile
+image: gitpod/workspace-full-vnc
 
 ports:
   - port: 35900
   - port: 5900
   - port: 6080
-    onOpen: open-browser
 
 tasks:
   - init: pip3 install -r requirements.txt
