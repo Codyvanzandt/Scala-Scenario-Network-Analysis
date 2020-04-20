@@ -8,4 +8,5 @@ class FrontEnd(App):
         root_widget = Label(text="Hello, World!")
         return root_widget
 
+
 FrontEnd().run()
