@@ -52,7 +52,3 @@ def parse_scenes(play_string):
 
 def parse_characters_from_scene(scene_string):
     return re.findall(r"(\+|-)(\w+)", scene_string)
-
-
-with open("tests/example_plays/flavio_and_isabella") as play_file:
-    play_string = play_file.read()
