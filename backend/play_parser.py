@@ -15,9 +15,10 @@ def load_play_from_string(play_string):
 
     new_play = Play(title=title)
     for scene_index, scene_string in enumerate(scene_strings):
-        previous_scene = new_play.scenes.get(f"Scene {scene_index - 1}", Scene())
+        previous_scene = new_play.scenes.get(f"Scene {scene_index}", Scene())
+        # print(f"Scanning Scene {scene_index + 1}")
         new_scene = Scene(
-            title=f"Scene {scene_index}", characters=previous_scene.get_characters()
+            title=f"Scene {scene_index+1}", characters=previous_scene.get_characters()
         )
         update_scene_with_new_directions(
             new_scene, scene_string,

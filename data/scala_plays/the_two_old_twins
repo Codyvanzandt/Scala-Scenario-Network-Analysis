@@ -1,0 +1,66 @@
+The Two Old Twins
++Oraz
++Pedr
++Flav
+-Oraz, -Flav, +Isa
+-Pedr, +Pasq
++Oraz, -Isa
++Flam
+-Pasq, -Flam, +Pedr
++Graz, -Oraz
++Flam
+-Flam, -Graz, +Isa
+-Isa, +Cap, +Arle
+-Cap, -Arle, +Fran
++Pasq
+-Fran, -Pasq, +Graz
++Pasq, +Fran
+-Fran, +Graz
+-Pasq, -Graz, +Fran
++Pasq, +Fran, +Graz
+-Pasq, -Fran, -Graz, -Pedr, +Hibr, +Pant
+-Hibr, +Flav
+-Pant, +Fran
++Pedr
+-Fran, 
++Oraz
++Isa
++Dot, -Isa
+-Dot, +Pant
+-Flav, -Oraz, -Pant
++Isa
++Pasq
+-Pasq, +Flam
++Graz,
+-Isa, -Flam, +Cap, +Arle
+-Cap, -Arle, -Pedr, -Graz, +Pasq
++Pant
++Pedr, -Pant
+-Pedr, +Isa
++Pedr
++Pant
++Dot
+-Pant, -Dot, -Pedr, -Isa, -Pasq, +Flav, +Oraz, +Pedr
++Cap
++Arle
+-Flav, -Oraz, -Pedr, -Cap, -Arle, +Graz
++Fran
++Isa
++Flam
+-Flam, -Isa
++Cap, +Arle, -Graz, -Fran
++Pant, +Dot
+-Pant, -Dot, -Cap, -Arle, +Pasq
++Isa, +Flam
++Dot, +Pant
+-Dot, -Pant, -Isa, -Flam
++Pedr
+-Pedr, +Oraz, +Flav
++Isa
++Flam
++Pant, +Dot
++Hibr
++Graz
++Fran
++Cap, +Arle
++Pedr
