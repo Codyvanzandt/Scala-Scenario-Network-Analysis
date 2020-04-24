@@ -1,0 +1,48 @@
+The Captain
++Oraz, +Isa, +Pedr
++Fran
+-Fran, -Isa, -Oraz
++Pant, +Dot
+-Dot
+-Pedr, -Pant, +Cap, +Arle
++Flam
+-Flam, -Cap, -Arle
++Pedr, +Fran
+-Fran, +Oraz
+-Pedr, +Fran
++Isa
+-Isa, -Oraz, -Fran,
++Dot, +Cap, +Arle
+-Cap, +Flam
+-Flam, -Dot, -Arle, +Pedr, +Fran
++Oraz
+-Oraz, -Pedr, -Fran, +Oraz, +Pedr
++Isa
+-Isa, +Pant
+-Pedr, -Oraz
++Isa
+-Pant, +Dot
+-Dot, +Cap
+-Cap, -Isa, +Arle, +Flam
+-Arle, -Flam, +Pant, +Dot
++Oraz, +Pedr
+-Oraz, -Pedr, -Pant, -Dot, +Cas, +Cap, +Isa
+-Cap, -Isa, +Arle, +Flam
++Oraz, +Pedr
++Pant, +Dot
+-Cas, -Arle, -Flam, -Oraz, -Pedr, -Pant, -Dot, +Fran, +Cas
++Dot
+-Dot, -Fran, -Cas, +Pant, +Oraz
++Pedr
+-Pant, -Oraz, -Pedr, +Cap, +Isa
++Arle
+-Cap, -Isa, +Oraz, +Flam
++Pedr, +Fran
++Pant, +Dot
+-Arle, -Oraz, -Flam, -Pedr, -Fran, -Pant, -Dot, +Cap, +Isa
++Pant, +Dot, +Pedr, +Fran, +Oraz, +Flam, +Arle
++Cap, +Isa
+-Cap, -Isa, -Flam
++Cap, +Isa
++Flam
++Cas

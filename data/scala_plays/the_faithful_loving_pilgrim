@@ -1,0 +1,42 @@
+The Faithful Loving Pilgrim
++Oraz, +Isa
+-Oraz, -Isa, +Cap, +Pedr
+-Cap, -Pedr, +Pant, +Flam
++Fran
++Pedr
+-Pant, -Pedr, -Fran
++Oraz, +Isa
+-Flam, -Oraz, +Arle
+-Arle, -Isa, +Cap, +Pedr
++Pant
+-Pant, +Fran
++Arle
+-Arle, -Fran, +Oraz, +Isa, -Cap, -Pedr
++Arle
+-Arle, -Oraz
++Flav
++Oraz
+-Isa, -Flav, -Oraz, +Arle, +Flam
++Pedr, +Fran
++Pant
+-Flam, -Arle
++Flam
+-Flam, -Pant, -Fran, -Pedr, +Isa
++Flav
++Arle
+-Isa, -Flav, -Arle, +Arle, +Flam
+-Arle, +Pant
++Pedr
+-Flam, +Isa
+-Isa, +Cap
++Arle
+-Cap, -Arle, -Pant, -Pedr, +Dot
++Flav
++Isa
++Arle
+-Dot, -Flav, -Isa, -Arle, +Flam, +Fran
++Oraz
++Pedr
+-Pedr, +Pant
++Cap, +Pedr
++Isa, +Dot, +Flav, +Arle

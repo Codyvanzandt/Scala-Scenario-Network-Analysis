@@ -1,0 +1,34 @@
+The Jealous Old Man
++Oraz, +Flav
++Pedr
+-Pedr, -Flav, +Pant, +Isa, +Flam, +Flav, +Graz
++Pedr
+-Pedr, -Oraz, -Flav, +Cavi
+-Cavi, -Graz, -Flam
+-Pant, -Isa, +Bur, +Oliv
++Pedr
+-Bur, -Oliv, +Pasq
+-Pasq, +Graz
++Oraz, +Flam, +Flav, +Isa, +Pant
++Bur
+-Bur, +Pedr, +Graz
+-Pedr, -Graz, -Oraz, -Flam, -Flav, -Isa, -Pant, +Pasq, +Oliv
++Pedr
++Bur
++Pant, +Isa, +Flav, +Oraz, +Graz
+-Oliv, -Pedr, -Bur, -Pant, -Isa, -Flav, -Oraz, -Graz, +Oraz
+-Pasq, -Oraz, +Graz, +Pedr
++Cap
++Flav, +Pant, +Isa, +Flam, +Bur, +Pasq, +Oliv
+
+
+-Graz, -Pedr, -Cap, -Flav, -Pant, -Isa, -Flam, -Bur, -Pasq, -Oliv, +Flav, +Pedr
++Oraz
++Cap, +Pant, +Isa, +Flam, -Pedr
++Bur, 
+-Bur, +Pedr, +Graz
+-Graz, -Flav, -Oraz, -Cap, -Pant, -Isa, -Flam, +Pasq
+-Pasq, +Pant
++Bur
++Oraz, +Cap, +Flav, +Isa, +Flam
++Pasq, +Graz
