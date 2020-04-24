@@ -9,5 +9,6 @@ class BaseConfig(object):
 class BackendConfig(BaseConfig):
     PORT = 5000
 
+
 class FrontendConfig(BaseConfig):
     PORT = 5001

@@ -1,14 +1,26 @@
 from collections import OrderedDict
+from backend.scene import Scene
 
 
 class Play:
-    def __init__(self, title=str()):
+    def __init__(self, title=str(), characters=None, scenes=None):
         self.title = title
-        self.scenes = OrderedDict()
-        self.characters = list()
+        self.characters = list() if characters is None else characters
+        self.scenes = OrderedDict() if scenes is None else scenes
 
     def __repr__(self):
-        return f"{self.__class__.__name__}(title='{self.title}')"
+        return f"Play(title='{self.title}')"
+
+    def __str__(self):
+        newlined_scenes = "\t" + ",\n\t".join(
+            str(scene) for scene in self.scenes.values()
+        )
+        return f"""{self.__class__.__name__}(
+    title='{self.title}',
+    scenes=[
+{newlined_scenes}
+    ],
+)"""
 
     def __contains__(self, scene_title_or_object):
         if isinstance(scene_title_or_object, str):

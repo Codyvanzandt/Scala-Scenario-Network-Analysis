@@ -32,7 +32,6 @@ def character():
 
 def test_default_play(default_play):
     # Characters
-    assert isinstance(default_play.characters, list)
     assert len(default_play.characters) == 0
 
     # Title

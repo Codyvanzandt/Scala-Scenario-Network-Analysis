@@ -1,5 +1,6 @@
 from collections import OrderedDict
 
+
 class App:
     def __init__(self):
         self.projects = OrderedDict()
@@ -22,6 +23,3 @@ class App:
     def remove_project(self, project_title):
         if project_title in self:
             self.projects.pop(project_title)
-
-    
-

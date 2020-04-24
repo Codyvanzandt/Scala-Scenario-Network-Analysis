@@ -4,3 +4,5 @@
 3. allow classes to be instantiated with their characters/scenes/plays, where possible
 4. add functional tests to project, play, and scene
 5. remove duplicate fixtures from test files -> refactor into imports
+6. Fix the __repr__ functions -> eval(repr(object)) == object
+7. Add test cases to play_parser
