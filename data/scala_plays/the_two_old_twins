@@ -25,8 +25,8 @@ The Two Old Twins
 -Fran, 
 +Oraz
 +Isa
-+Dot, -Isa
--Dot, +Pant
++Tof, -Isa
+-Tof, +Pant
 -Flav, -Oraz, -Pant
 +Isa
 +Pasq
@@ -39,8 +39,8 @@ The Two Old Twins
 -Pedr, +Isa
 +Pedr
 +Pant
-+Dot
--Pant, -Dot, -Pedr, -Isa, -Pasq, +Flav, +Oraz, +Pedr
++Tof
+-Pant, -Tof, -Pedr, -Isa, -Pasq, +Flav, +Oraz, +Pedr
 +Cap
 +Arle
 -Flav, -Oraz, -Pedr, -Cap, -Arle, +Graz
@@ -49,16 +49,16 @@ The Two Old Twins
 +Flam
 -Flam, -Isa
 +Cap, +Arle, -Graz, -Fran
-+Pant, +Dot
--Pant, -Dot, -Cap, -Arle, +Pasq
++Pant, +Tof
+-Pant, -Tof, -Cap, -Arle, +Pasq
 +Isa, +Flam
-+Dot, +Pant
--Dot, -Pant, -Isa, -Flam
++Tof, +Pant
+-Tof, -Pant, -Isa, -Flam
 +Pedr
 -Pedr, +Oraz, +Flav
 +Isa
 +Flam
-+Pant, +Dot
++Pant, +Tof
 +Hibr
 +Graz
 +Fran
