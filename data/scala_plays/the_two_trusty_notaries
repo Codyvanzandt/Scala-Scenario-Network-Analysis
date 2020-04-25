@@ -1,0 +1,48 @@
+The Two Trusty Notaries
++Isa, +Fran, +Pedr
+-Fran, -Isa, +Cap
++Isa
+-Isa, -Cap, +Flam
++Graz
+-Graz, -Flam, +Pant, +Arle
++Cap,
++Isa, 
+-Cap, -Pedr, -Pant, -Arle, -Isa, +Isa, +Flav
++Oraz, +Fran, -Isa
++Pant, +Arle
+-Fran, -Oraz, -Flav, +Graz, +Flam
+-Pant, -Arle, -Graz, -Flam, +Isa, +Fran
++Pant, +Graz, +Pedr
+-Isa, -Fran, +Fran
++Isa
++Cap
+-Cap, -Isa, -Fran, +Cap
++Flav
+-Flav, -Cap, -Pant, -Graz, -Pedr, +Arle, +Fran
++Pedr
++Oraz
+-Pedr
++Isa
++Flam
++Pedr
+-Arle, -Fran, -Oraz, -Isa, -Flam, -Pedr, +Oraz, +Flav
++Pedr
++Fran, +Isa, +Flam
+-Oraz, -Flav, -Fran, -Isa, -Flam, +Cap
+-Cap, +Arle
+-Arle, +Graz
+-Pedr, +Pant
++Flam
+-Flam, +Arle
++Cap
+-Cap, +Pedr
++Flav
+-Arle, -Flav
++Cap
++Isa
+-Isa, -Cap, +Oraz
+-Oraz, +Arle
++Flam, +Oraz
++Fran
++Flav, +Isa
++Cap

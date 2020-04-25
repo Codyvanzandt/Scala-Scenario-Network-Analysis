@@ -1,0 +1,49 @@
+The Fake Magician
++Pant, +Pedr
++Flav
+-Flav, -Pedr, -Pant, +Oraz, +Arle
++Pedr
++Flam
++Isa, -Flam
++Graz
+-Oraz, -Pedr
++Fran
+-Isa, -Graz, -Fran, +Cap
+-Cap, -Arle, +Oraz, +Flav
++Isa, +Flam
+-Isa, -Flam, -Oraz, -Flav, +Cap, +Arle
+-Arle, +Pant, +Pedr
+-Pant, -Pedr,  +Arle
+-Cap, -Arle, +Graz, +Fran
++Arle
+-Graz, -Fran, +Pedr
+-Arle, +Pant
++Flam, -Pant
++Graz
+-Flam, -Pedr, +Oraz
+-Oraz, +Pant
+-Pant, +Arle
+-Graz, +Fran
+-Fran, +Pedr
++Graz
+-Pedr, -Graz, +Cap
++Graz
+-Graz, -Cap, -Arle, +Pant, +Graz, +Cap, +Pedr, +Fran
++Arle
+-Pant, -Graz, -Cap, -Pedr, -Fran, -Arle, +Oraz, +Flav
++Pedr
++Cap, +Arle
+-Cap, -Arle, -Oraz, -Flav, +Pant
++Graz
+-Graz, -Pant, +Arle
+-Arle, +Isa, +Flam
+-Isa, -Flam, -Pedr, +Arle, +Fran
+-Fran, -Arle, +Pant, +Graz
++Pedr
++Arle
++Oraz, +Flav
+-Oraz, -Flav, +Fran
+-Fran, +Isa, +Flam
++Oraz, +Flav
++Fran
++Pedr

@@ -1,0 +1,36 @@
+The Tragic Events
++Oraz, +Flav
++Inn
+-Inn, -Oraz, -Flav, +Pant, +Pedr
+-Pant, -Pedr, +Flam, +Fran
+-Flam, -Fran, +Graz, +Arle
++Pant
+-Graz, -Arle, -Pant, +Oraz, +Flav
+-Oraz, -Flav, +Isa, +Pedr
++Arle
+-Arle, -Pedr, -Isa, +Oraz, +Flav
++Inn
+-Inn, -Oraz, -Flav, +Isa, +Inn
+-Inn, +Oraz
+-Oraz, -Isa, +Pant, +Pedr
++Flam
+-Pant, -Pedr
++Fran
+-Fran, -Flam, +Oraz, +Flav
++Graz, +Arle
+-Graz, -Arle, +Inn
++Graz
+-Inn, -Oraz, -Graz, +Isa
+-Flav, -Isa, +Flam, +Fran
+-Fran, +Cap
++Fran
+-Fran, -Flam, -Cap, +Pant, +Pedr
++Fran
+-Pedr, -Pant, +Flav, +Isa
+-Isa, -Fran, +Arle
++Graz
++Isa
++Fran
++Pedr
++Pant, +Oraz
++Cap, +Flam, +Fran

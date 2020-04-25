@@ -1,0 +1,38 @@
+The Two Identical Captains
++Isa, +Fran
++Flam
++Oraz
++Pant
+-Flam, -Isa, -Fran, -Oraz, +Graz
++Fran
+-Graz, -Fran, -Pant, +Cap, +Arle
++Pedr
+-Cap, -Arle, -Pedr, +Oraz, +Fran
+-Oraz, +Graz
++Oraz
++Flam
+-Fran, -Graz, -Oraz, -Flam, +Cap, +Flav
++Oraz
++Pedr
+-Pedr, -Oraz, -Cap, -Flav, +Pant, +Flam
+-Flam, +Fran
++Arle
+-Pant, -Fran, -Arle, +Cap, +Flav
+-Cap, -Flav, +Cap, +Fran
+-Fran, +Arle
+-Arle, -Cap, +Oraz, +Flam
++Pant
++Fran
++Cap
+-Fran, -Cap, -Flam, -Oraz, +Cap
++Pedr
+-Pedr, +Arle
+-Pant, -Cap, +Cap
++Pedr
+-Pedr, -Arle, +Graz
+-Cap, +Cap
++Pedr
+-Pedr, -Cap, -Graz, +Isa, +Fran
++Cap 
++Pant, +Graz
++Flam, +Oraz, +Pedr, +Flav, +Arle

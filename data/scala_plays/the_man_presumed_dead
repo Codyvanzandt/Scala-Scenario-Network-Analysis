@@ -1,0 +1,48 @@
+The Man Presumed Dead
++Oraz, +Isa
+-Isa, +Pant
+-Oraz, +Pedr
++Isa
+-Isa, -Pedr, -Pant, +Sig, +Flam
++Bur
+-Bur, -Sig, +Cap
++Flav
+-Flam, -Flav, +Isa
+-Cap, -Isa, +Oraz, +Flav
++Pedr
+-Oraz, -Flav, +Bur
++Isa
+-Pedr, -Isa, -Bur, +Pant, +Sig
++Isa
+-Pant, +Bur
++Cap
+-Sig, -Cap, -Bur, +Flav
++Cap
+-Isa, -Cap, +Sig
++Flam
+-Flav, -Flam, +Bur
+-Bur, -Sig, +Oraz, +Pedr
++Flam
++Sig
+-Sig, -Flam, +Flav
++Pant
+-Oraz, -Pedr, -Flav, +Sig
+-Pant, -Sig, +Pedr, +Bur
++Isa
+-Isa, +Cap
+-Pedr, -Bur, -Cap, +Cap, +Isa
++Sig
++Flam
++Bur
+-Bur, -Sig, +Pant
+-Cap, +Flav
+-Flam, +Pedr
+-Flav, -Pedr, -Pant, +Oraz,
++Flam
+-Flam, +Bur
+-Bur, -Isa, +Sig
+-Sig, +Flav,
+-Flav, +Pant,
+-Pant, +Pedr
+-Pedr, +Cap
++Pant, +Flav, +Pedr, +Sig, +Flam, +Isa, +Bur, +Arle
