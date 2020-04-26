@@ -1,0 +1,50 @@
+The Man Pretending Blindness
++Graz, +Isa, +Clau, +Arle, +Ric
++Cinz
+-Isa, -Clau, -Arle, -Ric, -Cinz, +Pant
+-Graz, +Cinz
+-Cinz, +Flam
++Pedr
++Fran
+-Pedr, -Pant, -Fran, -Flam, +Flav, +Bur
++Fran
+-Fran, -Flav, -Bur, +Cinz, +Oraz
++Fran, +Flam, +Pedr
++Pant
+-Cinz, -Oraz, -Fran, -Flam, -Pedr, -Pant, +Pant, +Pedr
++Clau
+-Clau, +Isa
++Arle
+-Isa, -Arle, -Pant, +Cinz
+-Cinz, -Pedr, +Bur, +Flav
++Fran
++Flam
+-Fran, -Bur, +Pedr
++Fran
+-Pedr, -Fran, -Flam, -Flav, +Oraz, +Pedr
++Ricc
+-Ricc, +Isa
+-Isa, -Oraz, -Pedr, +Bur, +Flav
++Isa
+-Bur
++Arle
+-Arle, -Isa, +Pant
++Pedr
++Fran
+-Pant, -Pedr, +Isa
++Bur
+-Flav, -Fran, -Isa, -Bur, +Pant, +Pedr
++Fran
+-Fran, +Oraz
++Graz, +Cinz
++Arle
+-Arle, -Oraz, -Pant, -Pedr, -Graz, -Cinz, +Flam, +Fran
++Bur
+-Bur, -Flam, -Fran, +Isa, +Flav,
++Pedr
+-Pedr, +Flam, +Fran
++Oraz,
++Pant, +Graz, +Cinz, +Pedr
++Fran, +Arle
++Clau, +Ricc
++Bur

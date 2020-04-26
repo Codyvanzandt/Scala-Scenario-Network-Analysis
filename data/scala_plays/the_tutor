@@ -1,0 +1,49 @@
+The Tutor
++Pant, +Oraz
++Cat
+-Cat, -Pant, +Isa, +Pedr
+-Pedr, -Isa, -Oraz, +Cap, +Arle
++Isa
+-Isa, +Pedr
+-Arle, -Cap, +Isa
+-Isa, -Pedr, +Oraz, +Flam,
+-Flam, +Fabr
++Graz
++Pedr
+-Fabr, -Graz, +Isa
+-Oraz, -Isa, +Arle
++Bur
+-Pedr, -Arle, -Bur, +Pant, +Pedr
++Graz
++Arle
+-Arle, +Cat
++Fabr
++Oraz
+-Pant, -Graz, -Fabr, -Oraz, +Isa
+-Isa, -Cat, +Flam
++Cap, +Oraz
+-Flam, -Cap
+-Oraz, -Pedr, +Pant, +Graz
++Fabr
++Cat
++Isa
+-Cat, -Fabr, -Pant, -Isa, -Graz, +Oraz, +Flam, +Pedr
++Cap,
++Flam
+-Cap, +Bur, -Pedr
+-Bur, -Flam, -Oraz, +Pant, +Isa
+-Isa, +Graz
++Pedr
++Cat
+-Graz, -Pant, -Cat, +Cat
++Isa,
+-Isa, -Cat, +Arle
++Oraz
++Flam
++Bur
++Pant, +Graz
++Isa
+-Pedr, -Arle, -Oraz, -Bur, -Pant, -Graz
++Fabr
++Oraz, +Pant, +Graz, +Pedr, +Arle, +Bur, +Cat
++Cap

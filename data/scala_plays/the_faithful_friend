@@ -1,0 +1,40 @@
+The Faithful Friend
++Pant, +Arle
++Oraz, +Pedr
+-Arle, -Pedr, -Pant, +Isa
++Flam
+-Isa, -Oraz, -Flam, +Pant, +Arle
++Graz, +Pedr
+-Graz, -Arle, -Pant, -Pedr, +Flam, +Isa
+-Flam, -Isa, +Cap, +Graz,
+-Graz, +Arle
+-Arle, +Pedr, -Cap, +Pant, +Arle
+-Pedr, -Pant, -Arle, +Flav, +Pedr
+-Flav, +Oraz
+-Oraz, +Isa, +Flam
+-Isa, -Pedr, -Flam, +Cap, +Arle
++Pant,
++Flav, -Pant, -Arle
+-Cap, +Isa
++Pedr
++Cap,
+-Cap, -Isa, -Pedr, +Flam
++Pedr
+-Flav, -Pedr, +Oraz
+-Flam, +Flav
+-Oraz, -Flav, +Pant, +Arle
+-Arle, +Graz
+-Pant, -Graz, +Oraz, +Fran, +Pedr
+-Fran, +Arle,
+-Oraz, -Pedr, +Graz
++Pant
+-Arle, -Pant, +Flav
+-Graz, +Isa
++Arle
++Pedr
+-Flav, -Isa, -Arle, +Cap, +Pant
++Arle,
+-Cap, +Graz, +Flam
+-Pedr, -Arle, +Oraz
++Isa, +Flav, +Pedr, +Arle
++Oraz

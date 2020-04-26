@@ -1,0 +1,51 @@
+The Hunt
++Pant, +Graz, +Clau, +Bur
+-Pant, -Graz, -Clau, -Bur, +Isa, +Flam
+-Isa, +Pedr
+-Flam, +Fran
+-Fran, -Pedr, +Arle, +Graz, +Clau, +Bur
++Pant, +Pedr, +Fran
+-Arle, -Graz, -Clau, -Bur, -Pant, -Pedr, -Fran, +Isa, +Oraz
++Cap, +Pedr
++Fran
+-Isa, -Oraz, -Cap, -Pedr, -Fran, +Pedr, +Isa
++Flam, +Fran
+-Fran, +Oraz
++Flav
+-Isa, -Flam, +Fran
++Isa
+-Fran, -Flav, -Isa, -Oraz, +Fran
+-Fran, -Pedr, +Isa, +Flam
++Cap
++Pedr
+-Cap, -Flam, -Pedr, -Isa, +Oraz
++Flav
++Pedr
++Isa
++Flam
++Fran
++Cap
+-Oraz, -Flav, -Pedr, -Isa, -Flam, -Fran, -Cap, +Pant, +Graz, +Bur, +Clau, +Arle
+-Graz, -Bur, -Clau, -Arle, +Pedr
++Isa
++Fran
++Bur
+-Pant, -Pedr, -Isa, -Fran, -Bur, +Cap
++Arle
+-Cap, -Arle, +Oraz, +Flav
++Pedr
++Isa
+-Isa, -Oraz, -Flav, +Arle
+-Arle, +Pant
+-Pedr, +Graz
+-Graz, -Pant, +Pedr, +Oraz, +Flav
+-Oraz, -Flav, +Arle
+-Arle, +Clau
++Graz
++Pant, +Bur
+-Pant, -Bur, +Pant, +Oraz, +Isa
+-Pedr, +Bur,
++Flav, +Flam
++Arle, +Fran
++Pedr
++Cap

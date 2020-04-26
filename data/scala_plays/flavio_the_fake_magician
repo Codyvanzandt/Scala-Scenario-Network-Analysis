@@ -1,0 +1,53 @@
+Flavio the Fake Magician
++Pant, +Graz
++Pedr
++Cap, +Arle
+-Pant, -Graz, -Pedr, +Flam
++Isa
++Oraz
+-Cap, -Arle, -Oraz, +Fran
++Bur
+-Fran, -Flam, -Isa, +Pedr
+-Bur, +Cinz
++Arle, +Isa, +Flam, +Fran
++Pant, +Bur
+-Pedr, -Cinz, -Arle, -Isa, -Flam, -Fran, -Pant, -Bur, +Pant, +Pedr
++Bur
++Fran
+-Pant, -Bur, -Fran, -Pedr, +Cinz, +Oraz
++Isa, 
+-Isa, -Oraz, +Flav
+-Cinz, +Cap, +Arle
+-Cap, -Arle, -Flav, +Graz, +Bur
++Fran, +Pedr
+-Graz, -Bur
+-Fran, +Flam
++Pant
+-Flam, +Flav, +Cap, +Arle
+-Pant, +Fran
++Bur
+-Pedr, -Flav, -Cap, -Arle, -Fran, -Bur, +Isa, +Flav
+-Isa, +Bur
+-Bur, +Fran
++Oraz
+-Oraz, -Fran, +Flam
+-Flam, +Cinz
++Isa
+-Isa, -Cinz, +Bur
+-Bur, +Graz
+-Graz, +Pant
+-Pant, -Flav, +Oraz
++Pedr
++Pant
+-Pedr, +Fran
+-Oraz, -Fran, +Flav
++Flam,
+-Flam, -Flav, +Graz
++Bur
+-Graz, +Fran, +Oraz
++Pedr
++Isa, +Cinz
++Graz
++Flam
++Flav
++Cap, +Arle

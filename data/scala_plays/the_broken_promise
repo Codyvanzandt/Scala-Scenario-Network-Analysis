@@ -1,0 +1,47 @@
+The Broken Promise
++Pant, +Bur
+-Bur, -Pant, +Isa
++Pant, +Oraz, +Bur
+-Bur, -Oraz,
++Bur
+-Pant, -Bur, +Fran
+-Fran, -Isa, +Flav, +Pedr
++Pant
+-Flav, -Pedr, -Pant, +Cap, +Arle
++Fran,
+-Cap, -Arle, -Fran, +Bur, +Isa
+-Isa, +Pant
+-Bur, +Graz
+-Graz, -Pant, +Flam, +Bur
+-Bur, +Pant
++Bur
+-Flam, -Bur, -Pant, +Cap, +Arle
+-Cap, -Arle, +Flav, +Pedr
++Oraz
+-Flav, +Pant
+-Pedr, -Pant, +Isa
++Bur
++Pedr
++Flav
+-Isa, -Flav, -Pedr, +Flam
+-Oraz, -Flam, -Bur, +Cap, +Arle
++Fran
+-Fran, -Arle, -Cap, +Pedr
++Bur
++Pant
+-Pant, -Bur, -Pedr, +Oraz, +Pedr, +Pant
+-Oraz, -Pant, +Bur
+-Bur, -Pedr, +Isa, +Flav
+-Isa, +Pedr, +Bur
+-Pedr, -Flav, +Pedr
+-Pedr, +Flav
++Arle
++Cap
+-Arle, -Flav, -Cap
++Flav
++Flam
+-Flav, -Flam, +Pant
+-Bur, +Pedr
++Oraz, +Flav, +Cap
++Isa, +Flam
++Bur
