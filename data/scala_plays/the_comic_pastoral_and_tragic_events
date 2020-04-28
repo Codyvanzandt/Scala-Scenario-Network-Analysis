@@ -1,0 +1,25 @@
+The Comic, Pastoral and Tragic Events
++Pant, +Graz
++Pedr,
++Bur
+-Pant, -Graz, -Pedr, -Bur, +Oraz, +Flav
++Isa
++Fran
+-Fran, -Oraz, -Flav, -Isa, +Pant, +Pedr
++Fran,
++Graz, +Bur
++Cap
++Flam
+-Pant, -Graz, -Bur, -Cap, -Flam, -Fran, +Isa
+-Isa, +Oraz
+-Pedr, +Cap
+-Cap, +Isa
+-Isa, +Flav
++Flam
+-Flam, -Oraz, +Fran,
++Cap, +Graz, +Pedr, +Bur
++Isa
++Cap
++Flam
++Flav
++Isa

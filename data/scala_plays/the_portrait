@@ -1,0 +1,57 @@
+The Portrait
++Isa, +Pedr
+-Isa, -Pedr, +Cap, +Arle
++Silv
+-Silv, -Cap, +Flam
+-Flam, +Graz
++Pant
+-Arle, +Flav
+-Pant, -Graz, +Flam
++Isa
+-Isa, -Flam, +Arle
+-Arle, -Flav, +Oraz, +Pedr
++Isa
+-Isa, -Pedr, +Cap, +Arle
+-Cap, -Arle, -Oraz, +Vit, +Pio,
++Pedr
++Isa
++Pant
+-Vit, -Pio, -Isa, -Pant, -Pedr, +Oraz, +Flav
++Arle
++Isa
+-Arle, -Isa, +Pedr
++Isa, 
++Flam
+-Isa, -Oraz, -Flav, +Graz
+-Flam, +Pio
+-Graz, -Pedr, -Pio, +Cap, +Silv
++Arle
+-Cap, +Isa, +Flam
+-Arle,
++Arle
+-Isa, -Flam, -Silv, -Arle, +Vit, +Pio
++Pedr
++Pant
+-Pant, +Flav,
++Flam, 
+-Flav, -Flam, +Pant
++Isa,
+-Pant, -Isa, +Graz
+-Graz, -Pedr, +Oraz
+-Pio, -Vit, +Isa
++Arle
++Flam
++Silv
++Pant
+-Arle, -Oraz, -Isa, -Flam, -Pant, -Silv, +Pedr
++Isa
++Flam, +Silv
++Arle
++Oraz,
++Flav,
+-Isa, -Flam, -Silv, -Oraz, -Flav, +Cap
+-Pedr, -Cap, +Pedr
+
++Pant, +Graz, +Pio, +Vit
+-Pio, -Vit, +Isa, +Flam,
++Cap, +Oraz, +Flav, +Silv
