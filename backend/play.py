@@ -3,10 +3,11 @@ from backend.scene import Scene
 
 
 class Play:
-    def __init__(self, title=str(), characters=None, scenes=None):
+    def __init__(self, title=str(), characters=None, scenes=None, graph=None):
         self.title = title
         self.characters = list() if characters is None else characters
         self.scenes = OrderedDict() if scenes is None else scenes
+        self.graph = graph
 
     def __repr__(self):
         return f"Play(title='{self.title}')"
