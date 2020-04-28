@@ -1,0 +1,9 @@
+0. Come up with good node-level features
+1. Implement node-level features
+
+2. Come up with network-level features
+3. Implement network-level features
+
+4. Implement random graph generator
+5. Normalize network statistics vs average random graph
+6. Normalize node

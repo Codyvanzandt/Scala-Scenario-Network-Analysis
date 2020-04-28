@@ -5,25 +5,25 @@ The Mirror
 -Oraz, -Pedr, +Pant, +Graz
 +Cap
 -Graz, -Cap, -Pant, +Flav, +Oraz
-+Sig, +Flam
++Lau, +Flam
 +Cap, -Flav, -Oraz
 -Flam, -Cap
 +Pedr
--Pedr, -Sig, +Flav, +Isa
+-Pedr, -Lau, +Flav, +Isa
 -Isa, +Pant, +Arle
 -Flav, +Flam
 -Flam, -Pant, -Arle, +Pedr, +Graz
 -Graz, +Pant
 -Pedr, +Graz
 -Pant, -Graz, +Flav, +Arle
--Flav, +Oraz, +Sig
+-Flav, +Oraz, +Lau
 -Oraz, +Pant
--Sig, -Arle, -Pant, +Pedr, +Cap
+-Lau, -Arle, -Pant, +Pedr, +Cap
 -Cap, +Oraz
-+Sig
--Sig, -Oraz, +Isa
-+Sig, +Flam
--Sig, -Flam, -Isa, -Pedr, +Flav, +Arle
++Lau
+-Lau, -Oraz, +Isa
++Lau, +Flam
+-Lau, -Flam, -Isa, -Pedr, +Flav, +Arle
 -Flav, +Pant
 +Graz
 -Graz, +Pedr
@@ -34,10 +34,10 @@ The Mirror
 -Isa, -Oraz, +Pedr, +Flav, +Arle
 -Flav, -Arle, +Flam
 +Oraz
-+Sig
--Oraz, -Flam, -Sig, +Flav
++Lau
+-Oraz, -Flam, -Lau, +Flav
 -Flav, -Pedr, +Pant, +Cap
-+Graz, +Sig
++Graz, +Lau
 +Flam, +Isa
 +Pedr
 -Pedr, +Arle
