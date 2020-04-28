@@ -1,5 +1,3 @@
-
-
 0. Come up with good node-level features
     Topological Measures
         Distance
