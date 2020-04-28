@@ -39,7 +39,10 @@ class Scene:
             self._add_character_relationship(*character_pair)
 
     def _add_character_relationship(self, u, v):
-        self.character_graph.add_edge(u, v, weight=1)
+        if self.character_graph.has_edge(u,v):
+            self.character_graph[u][v]["weight"] += 1
+        else:
+            self.character_graph.add_edge(u, v, weight=1)
 
     def _get_unique_character_pairs(self):
         return combinations(self.get_characters(), 2)
