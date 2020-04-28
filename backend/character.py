@@ -8,9 +8,11 @@ class Archetype(Enum):
     SERVI = 2
     CAPITANI = 3
 
+
 class Gender(Enum):
     MALE = 0
     FEMALE = 1
+
 
 @dataclass
 class Character:

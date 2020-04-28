@@ -1,4 +1,13 @@
 0. Come up with good node-level features
+    Topological Measures
+        Distance
+            Hopcount/Distance (min jumps from node to node)
+            Closeness (average hopcount to all nodes)
+            Eccentricity (the longest hopcount to any node)
+            Betweenness (number of shortest paths that traverse the node)
+        Connection
+            Degree
+            Local clustering coefficient (cliquishness of a node's neighbors)
 1. Implement node-level features
 
 2. Come up with network-level features

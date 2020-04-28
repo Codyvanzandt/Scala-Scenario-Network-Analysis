@@ -1,3 +1,5 @@
+image: gitpod/workspace-full-vnc
+
 tasks:
   - init: pip3 install -r requirements.txt
   - init: git config core.hooksPath hooks
