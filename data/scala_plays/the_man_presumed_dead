@@ -3,46 +3,46 @@ The Man Presumed Dead
 -Isa, +Pant
 -Oraz, +Pedr
 +Isa
--Isa, -Pedr, -Pant, +Sig, +Flam
+-Isa, -Pedr, -Pant, +Lau, +Flam
 +Bur
--Bur, -Sig, +Cap
+-Bur, -Lau, +Cap
 +Flav
 -Flam, -Flav, +Isa
 -Cap, -Isa, +Oraz, +Flav
 +Pedr
 -Oraz, -Flav, +Bur
 +Isa
--Pedr, -Isa, -Bur, +Pant, +Sig
+-Pedr, -Isa, -Bur, +Pant, +Lau
 +Isa
 -Pant, +Bur
 +Cap
--Sig, -Cap, -Bur, +Flav
+-Lau, -Cap, -Bur, +Flav
 +Cap
--Isa, -Cap, +Sig
+-Isa, -Cap, +Lau
 +Flam
 -Flav, -Flam, +Bur
--Bur, -Sig, +Oraz, +Pedr
+-Bur, -Lau, +Oraz, +Pedr
 +Flam
-+Sig
--Sig, -Flam, +Flav
++Lau
+-Lau, -Flam, +Flav
 +Pant
--Oraz, -Pedr, -Flav, +Sig
--Pant, -Sig, +Pedr, +Bur
+-Oraz, -Pedr, -Flav, +Lau
+-Pant, -Lau, +Pedr, +Bur
 +Isa
 -Isa, +Cap
 -Pedr, -Bur, -Cap, +Cap, +Isa
-+Sig
++Lau
 +Flam
 +Bur
--Bur, -Sig, +Pant
+-Bur, -Lau, +Pant
 -Cap, +Flav
 -Flam, +Pedr
 -Flav, -Pedr, -Pant, +Oraz,
 +Flam
 -Flam, +Bur
--Bur, -Isa, +Sig
--Sig, +Flav,
+-Bur, -Isa, +Lau
+-Lau, +Flav,
 -Flav, +Pant,
 -Pant, +Pedr
 -Pedr, +Cap
-+Pant, +Flav, +Pedr, +Sig, +Flam, +Isa, +Bur, +Arle
++Pant, +Flav, +Pedr, +Lau, +Flam, +Isa, +Bur, +Arle

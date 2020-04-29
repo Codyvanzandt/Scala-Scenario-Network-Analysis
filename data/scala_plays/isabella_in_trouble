@@ -1,37 +1,49 @@
 Isabella in Trouble
-+Flam, +Flav
-+Dot, +Oraz
++Pant, +Fran,
++Oraz
+-Pant, -Oraz, -Fran, +Pedr, +Flavia,
++Oraz,
++Fran
++Cap
+-Cap, -Flavia, -Oraz, -Pedr, -Fran, +Graz, +Cap
++Pant
+-Cap, -Pant, +Pedr,
+-Graz, -Pedr, +Flavia, +Oraz 
+-Flavia, -Oraz, +Cap, +Arle,
++Graz
+-Graz, -Cap, -Arle, +Flam, +Flav
++Graz, +Oraz
 -Oraz, +Fran
 +Cap
--Flav, -Fran, -Dot, -Cap, -Flam, +Pedr, +Flav
+-Flav, -Fran, -Graz, -Cap, -Flam, +Pedr, +Flav
 +Arle
 +Cap
--Flav, -Pedr, +Sig
--Sig, +Pedr, +Flav
+-Flav, -Pedr, +Flavia
+-Flavia, +Pedr, +Flav
 -Cap, +Pant
--Pant, -Flav, -Pedr, +Dot
+-Pant, -Flav, -Pedr, +Graz
 +Pedr
 -Pedr, +Arle
 -Arle, +Cap
 -Cap, +Pant
 -Pant, +Pedr, +Flav, +Arle
 
--Dot, -Pedr, -Flav, -Arle, +Flam, +Arle
+-Graz, -Pedr, -Flav, -Arle, +Flam, +Arle
 +Oraz
--Arle, +Sig
--Sig, -Oraz, +Pedr
+-Arle, +Flavia
+-Flavia, -Oraz, +Pedr
 +Cap, +Arle
-+Sig
--Sig, +Flam
--Cap, +Dot
++Flavia
+-Flavia, +Flam
+-Cap, +Graz
 +Fran
 +Pant
 +Flav
--Flam, -Pedr, -Arle, -Dot, -Fran, -Pant, -Flav, +Oraz, +Arle
--Arle, +Sig
+-Flam, -Pedr, -Arle, -Graz, -Fran, -Pant, -Flav, +Oraz, +Arle
+-Arle, +Flavia
 +Pant
 +Flam
 +Pedr
--Oraz, -Sig, -Pant, -Flam, -Pedr, +Dot, +Cap, +Arle
-+Sig, +Pant, +Oraz, +Pedr, +Flam, +Flav, +Fran
+-Oraz, -Flavia, -Pant, -Flam, -Pedr, +Graz, +Cap, +Arle
++Flavia, +Pant, +Oraz, +Pedr, +Flam, +Flav, +Fran
 +Fabr

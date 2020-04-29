@@ -2,8 +2,8 @@ The Tooth Puller
 +Pant, +Pedr
 -Pant, +Fran
 -Fran, +Flav
--Flav, +Dot
--Dot, -Pedr, +Cap, +Arle
+-Flav, +Graz
+-Graz, -Pedr, +Cap, +Arle
 -Arle, +Flam
 +Isa
 -Isa, -Cap
@@ -14,8 +14,8 @@ The Tooth Puller
 +Pant
 -Isa, -Oraz, +Fran
 -Fran, +Flav
--Flav, +Dot
--Dot, +Flam
+-Flav, +Graz
+-Graz, +Flam
 -Flam, +Oraz
 -Oraz, -Pant, +Arle
 +Pant
@@ -27,9 +27,9 @@ The Tooth Puller
 -Isa, +Pedr
 +Cap
 -Arle, -Cap, +Flam
--Flam, +Dot
+-Flam, +Graz
 +Pant
--Dot, -Pant, -Pedr, +Oraz, +Isa
+-Graz, -Pant, -Pedr, +Oraz, +Isa
 -Isa, -Oraz, +Flav, +Pant
 -Flav, -Pant, +Cap, +Flav
 -Cap, -Flav, +Arle, +Isa
@@ -37,8 +37,8 @@ The Tooth Puller
 -Arle, +Oraz
 -Oraz, +Cap
 +Flam
--Cap, -Flam, +Dot,
--Dot, +Fran
+-Cap, -Flam, +Graz,
+-Graz, +Fran
 -Fran, -Pedr, +Arle, +Isa
 -Arle, +Flav
 -Isa, +Pant
@@ -51,4 +51,4 @@ The Tooth Puller
 -Flav, -Oraz
 +Flav
 +Oraz, +Isa
-+Dot, +Pedr, +Fran
++Graz, +Pedr, +Fran
