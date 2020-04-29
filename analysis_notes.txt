@@ -1,18 +1,26 @@
-0. Come up with good node-level features
-    Topological Measures
-        Distance
-            Hopcount/Distance (min jumps from node to node)
-            Closeness (average hopcount to all nodes)
-            Eccentricity (the longest hopcount to any node)
-            Betweenness (number of shortest paths that traverse the node)
-        Connection
-            Degree
-            Local clustering coefficient (cliquishness of a node's neighbors)
-1. Implement node-level features
+0. [X] Come up with good node-level features
+    [X] Topological Measures
+        [X] Distance
+            [X] Closeness (average hopcount to all nodes)
+            [X] Betweenness (number of shortest paths that traverse the node)
+        [X] Connection
+            [X] Degree
+            [X] Local clustering coefficient (cliquishness of a node's neighbors)
 
-2. Come up with network-level features
-3. Implement network-level features
+1. [X] Implement node-level features
+        [X] Distance
+            [X] Closeness (average hopcount to all nodes)
+            [X] Betweenness (number of shortest paths that traverse the node)
+        [X] Connection
+            [X] Degree
+            [X] Local clustering coefficient (cliquishness of a node's neighbors)
 
-4. Implement random graph generator
+2. Come up with network-level features (LATER)
+3. Implement network-level features (LATER)
+
+4. [X] Implement random graph generator
+    [X] Random graphs of certain size
+    [X] Random edge weights normal w.r.t. scala plays
+
 5. Normalize network statistics vs average random graph
-6. Normalize node
+6. Normalize node statistics vs average random graph
