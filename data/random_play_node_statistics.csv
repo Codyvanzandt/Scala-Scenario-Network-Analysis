@@ -1,0 +1,27 @@
+basis_play,degree,weighted_degree,closeness,flow_betweenness,clustering_coefficient
+The Tooth Puller,6.727,37.283,0.244,0.152,0.253
+The Two Old Twins,12.0,66.464,0.367,0.105,0.351
+The Tutor,10.0,55.404,0.343,0.123,0.365
+Isabella in Trouble,10.0,55.235,0.349,0.123,0.36
+The Faithful Loving Pilgrim,9.0,49.826,0.331,0.134,0.372
+The Captain,9.0,49.934,0.329,0.134,0.372
+The Madness of Isabella,9.538,52.764,0.302,0.12,0.282
+The Jealous Old Man,9.833,54.456,0.325,0.122,0.318
+The Hunt,11.0,60.986,0.356,0.114,0.357
+The Man Presumed Dead,9.0,49.731,0.334,0.134,0.372
+The Fake Magician,8.6,47.508,0.315,0.138,0.356
+Isabella's Jealousy,10.333,57.099,0.342,0.118,0.335
+The Tragic Events,8.909,49.445,0.309,0.132,0.327
+The Two Identical Captains,9.0,49.894,0.327,0.134,0.371
+The Mirror,9.0,49.863,0.33,0.134,0.37
+The Deserved Punishment,9.0,50.045,0.332,0.134,0.369
+The Husband,8.6,47.592,0.323,0.138,0.355
+Isabella the Astrologer,7.0,38.833,0.305,0.164,0.392
+The Faithful Friend,7.2,39.92,0.269,0.152,0.305
+The Two Trusty Notaries,9.0,49.971,0.328,0.134,0.37
+"The Comic, Pastoral and Tragic Events",8.0,44.353,0.298,0.144,0.334
+The Man Pretending Blindness,12.0,66.459,0.374,0.105,0.35
+The Broken Promise,6.364,35.321,0.23,0.156,0.242
+Flavio's Luck,11.857,65.447,0.356,0.104,0.318
+The Portrait,10.333,57.196,0.34,0.118,0.338
+Flavio the Fake Magician,11.0,60.866,0.361,0.114,0.354

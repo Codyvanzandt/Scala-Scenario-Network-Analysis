@@ -46,22 +46,34 @@ def summarize_node(play, node):
     return {
         "name": node,
         "degree": degree(play, node),
-        "weighted_degree": round( weighted_degree(play, node), 3 ),
-        "closeness": round( closeness(play, node), 3 ),
-        "flow_betweenness": round( flow_betweenness(play, node), 3 ),
-        "clustering_coefficient": round( clustering_coefficient(play, node), 3 )
+        "weighted_degree": round(weighted_degree(play, node), 3),
+        "closeness": round(closeness(play, node), 3),
+        "flow_betweenness": round(flow_betweenness(play, node), 3),
+        "clustering_coefficient": round(clustering_coefficient(play, node), 3),
     }
+
 
 def generate_all_character_data(output_file=None):
     character_data = _generate_all_character_data()
     if output_file is None:
         return character_data
     else:
-        with open(output_file,"w") as output_file_object:
-            fieldnames = ["character", "archetype", "gender", "play", "degree", "weighted_degree", "closeness", "flow_betweenness", "clustering_coefficient"]
+        with open(output_file, "w") as output_file_object:
+            fieldnames = [
+                "character",
+                "archetype",
+                "gender",
+                "play",
+                "degree",
+                "weighted_degree",
+                "closeness",
+                "flow_betweenness",
+                "clustering_coefficient",
+            ]
             writer = DictWriter(output_file_object, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(character_data)
+
 
 def _generate_all_character_data():
     for play in get_all_plays():
@@ -69,13 +81,13 @@ def _generate_all_character_data():
             character_summary = summarize_node(play, character_name)
             character_object = get_character(character_name)
             yield {
-                "character" : character_object.name,
-                "archetype" : character_object.archetype.name,
-                "gender" : character_object.gender.name,
-                "play" : play.title,
-                "degree" : character_summary["degree"],
-                "weighted_degree" : character_summary["weighted_degree"],
-                "closeness" : character_summary["closeness"],
-                "flow_betweenness" : character_summary["flow_betweenness"],
-                "clustering_coefficient" : character_summary["clustering_coefficient"],
+                "character": character_object.name,
+                "archetype": character_object.archetype.name,
+                "gender": character_object.gender.name,
+                "play": play.title,
+                "degree": character_summary["degree"],
+                "weighted_degree": character_summary["weighted_degree"],
+                "closeness": character_summary["closeness"],
+                "flow_betweenness": character_summary["flow_betweenness"],
+                "clustering_coefficient": character_summary["clustering_coefficient"],
             }

@@ -20,6 +20,7 @@ class Character:
     archetype: Archetype
     gender: Gender
 
+
 # VECCHI
 PANTALONE = Character("Pantalone", Archetype.VECCHI, Gender.MALE)
 GRAZIANO = Character("Graziano", Archetype.VECCHI, Gender.MALE)
@@ -60,37 +61,38 @@ CAPITANO = Character("Capitano", Archetype.CAPITANI, Gender.MALE)
 VITTORIA = Character("Vittoria", Archetype.CAPITANI, Gender.FEMALE)
 
 _NICKNAME_TO_CHARACTER = {
-    'Arle' : ARLECCHINO,
-    'Bur' : BURATTINO,
-    'Cap' : CAPITANO,
-    'Cas' : CASSANDRO,
-    'Cat' : CATALDO,
-    'Cavi' : CAVICCHIO,
-    'Clau' : CLAUDIONE,
-    'Cinz' : CINZIO,
-    'Fabr' : FABRIZIO,
-    'Flam' : FLAMINIA,
-    'Flav' : FLAVIO,
-    'Flavia' : FLAVIA,
-    'Fran' : FRANCESCHINA,
-    'Graz' : GRAZIANO,
-    'Gril' : GRILLO,
-    'Hibr' : HIBRAHIM,
-    'Inn' : INNKEEPER,
-    'Isa' : ISABELLA,
-    'Lau' : LAURA,
-    'Lid' : LIDIA,
-    'Oliv' : OLIVETTA,
-    'Oraz' : ORAZIO,
-    'Pant' : PANTALONE,
-    'Pasq' : PASQUELLA,
-    'Pedr' : PEDROLINO,
-    'Pio' : PIOMBINO,
-    'Ric' : RICCIOLINA,
-    'Silv' : SILVIA,
-    'Tof' : TOFANO,
-    'Vit' : VITTORIA
+    "Arle": ARLECCHINO,
+    "Bur": BURATTINO,
+    "Cap": CAPITANO,
+    "Cas": CASSANDRO,
+    "Cat": CATALDO,
+    "Cavi": CAVICCHIO,
+    "Clau": CLAUDIONE,
+    "Cinz": CINZIO,
+    "Fabr": FABRIZIO,
+    "Flam": FLAMINIA,
+    "Flav": FLAVIO,
+    "Flavia": FLAVIA,
+    "Fran": FRANCESCHINA,
+    "Graz": GRAZIANO,
+    "Gril": GRILLO,
+    "Hibr": HIBRAHIM,
+    "Inn": INNKEEPER,
+    "Isa": ISABELLA,
+    "Lau": LAURA,
+    "Lid": LIDIA,
+    "Oliv": OLIVETTA,
+    "Oraz": ORAZIO,
+    "Pant": PANTALONE,
+    "Pasq": PASQUELLA,
+    "Pedr": PEDROLINO,
+    "Pio": PIOMBINO,
+    "Ric": RICCIOLINA,
+    "Silv": SILVIA,
+    "Tof": TOFANO,
+    "Vit": VITTORIA,
 }
+
 
 def get_character(nickname):
     return _NICKNAME_TO_CHARACTER[nickname]

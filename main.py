@@ -6,8 +6,9 @@ from utils.random_graphs import generate_similar_random_graph
 import matplotlib.pyplot as plt
 import networkx
 from pprint import pprint
+from utils.random_graphs import write_random_node_statistics
 import time
 
 play = load_play_from_file("data/scala_plays/the_deserved_punishment")
 
-generate_all_character_data("data/all_character_data.csv")
+write_random_node_statistics("data/random_play_node_statistics.csv")
