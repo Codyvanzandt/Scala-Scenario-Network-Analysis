@@ -1,0 +1,76 @@
+---
+title: "Network Analysis of Flamino Scala's Scenarios"
+output: html_notebook
+---
+
+```{r setup}
+knitr::opts_knit$set(root.dir = "../../")
+```
+
+```{r,message=FALSE,echo=FALSE}
+library(tidyverse)
+library(GGally)
+```
+
+# Data
+```{r, message=FALSE}
+char_data <- read_csv("data/normalized_character_data.csv") %>%
+  rename(w_degree=weighted_degree, betweenness=flow_betweenness, cluster=clustering_coefficient)
+head(char_data,n=10)
+```
+# All Characters by Gender
+```{r}
+ggscatmat(char_data, columns = 6:9, alpha=0.8, color="gender")
+```
+
+# Archetype
+```{r}
+ggscatmat(char_data, columns = 6:9, alpha=0.8, color="archetype")
+```
+
+# The Vecchi
+```{r}
+char_data %>%
+  dplyr::filter(character %in% c("Pantalone", "Graziano") ) %>%
+  ggscatmat(columns = 6:9, alpha=0.8, color="character")
+```
+# The Innamorati
+```{r}
+char_data %>%
+  dplyr::filter(archetype == "INNAMORATI" ) %>%
+  ggscatmat(columns = 6:9, alpha=0.8, color="gender")
+```
+### Flavio vs. Orazio
+```{r}
+char_data %>%
+  dplyr::filter(character %in% c("Orazio", "Flavio")) %>%
+  ggscatmat(columns = 6:9, alpha=0.8, color="character")
+```
+
+### Isabella vs. Flaminia
+```{r}
+char_data %>%
+  dplyr::filter(character %in% c("Isabella", "Flaminia")) %>%
+  ggscatmat(columns = 6:9, alpha=0.8, color="character")
+```
+
+# The Servi
+```{r}
+char_data %>%
+  dplyr::filter(archetype == "SERVI" ) %>%
+  ggscatmat(columns = 6:9, alpha=0.8, color="gender")
+```
+
+### Pedrolino vs. Arlechino vs. Burattino
+```{r}
+char_data %>%
+  dplyr::filter(character %in% c("Pedrolino", "Arlecchino", "Burattino")) %>%
+  ggscatmat(columns = 6:9, alpha=0.8, color="character")
+```
+
+### Franceschina vs. the Male Servi
+```{r}
+char_data %>%
+  dplyr::filter(character == "Franceschina" | ( archetype == "SERVI" & gender == "MALE" ) ) %>%
+  ggscatmat(columns = 6:9, alpha=0.8, color="gender")
+```
