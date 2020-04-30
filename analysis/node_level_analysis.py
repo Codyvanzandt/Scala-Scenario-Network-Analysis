@@ -7,7 +7,7 @@ from networkx.algorithms.cluster import clustering
 from functools import lru_cache
 from utils.load_play import get_all_plays
 from backend.character import get_character
-from csv import DictWriter
+from csv import DictWriter, DictReader
 
 
 def degree(play, node):
@@ -51,6 +51,33 @@ def summarize_node(play, node):
         "flow_betweenness": round(flow_betweenness(play, node), 3),
         "clustering_coefficient": round(clustering_coefficient(play, node), 3),
     }
+
+def normalize_all_character_data(character_file_path, normalizing_file_path, output_file_path):
+    character_data = _read_character_data(character_file_path)
+    normalizing_data = _read_normalizing_data_by_play(normalizing_file_path)
+
+    for character_row in character_data:
+        play_title = character_row["play"]
+        play_specific_normalizing_data = normalizing_data[play_title]
+        for statistic_name, norm_statistic_value in play_specific_normalizing_data.items():
+            char_statistic_value = float( character_row[statistic_name] )
+            norm_statistic_value = float( norm_statistic_value )
+            character_row[statistic_name] = round( char_statistic_value / norm_statistic_value, 3 )
+
+    with open(output_file_path,"w") as output_file:
+        norm_data_writer = DictWriter(output_file, fieldnames=character_data[0].keys())
+        norm_data_writer.writeheader()
+        norm_data_writer.writerows(character_data)
+
+def _read_character_data(character_file_path):
+    with open(character_file_path, "r") as char_data_file_obj:
+        character_data_reader = DictReader(char_data_file_obj)
+        return [ row for row in character_data_reader ]
+
+def _read_normalizing_data_by_play(normalizing_file_path):
+    with open(normalizing_file_path, "r") as norm_file_obj:
+        normalizing_data_reader = DictReader(norm_file_obj)
+        return { row["basis_play"] : {norm_statistic_name : norm_statistic_val for norm_statistic_name,norm_statistic_val in row.items() if norm_statistic_name != "basis_play"} for row in normalizing_data_reader }
 
 
 def generate_all_character_data(output_file=None):

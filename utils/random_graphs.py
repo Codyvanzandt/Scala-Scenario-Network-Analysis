@@ -8,8 +8,16 @@ from backend.play import Play
 import math
 import os
 
+
 def write_random_node_statistics(output_file_path):
-    field_names = ["basis_play", "degree", "weighted_degree", "closeness", "flow_betweenness", "clustering_coefficient"]
+    field_names = [
+        "basis_play",
+        "degree",
+        "weighted_degree",
+        "closeness",
+        "flow_betweenness",
+        "clustering_coefficient",
+    ]
     with open(output_file_path, "w") as output_file:
         writer = DictWriter(output_file, field_names)
         writer.writeheader()
@@ -19,13 +27,16 @@ def write_random_node_statistics(output_file_path):
             random_stats["basis_play"] = play.title
             writer.writerow(random_stats)
             print(f"Play {i+1}/25")
-        
+
 
 def get_random_node_statistics(play, n):
     random_node_summaries = list(_yield_random_node_summaries(play, n))
     n_summaries = len(random_node_summaries)
-    return { k : round( v / n_summaries, 3) for k,v in sum(random_node_summaries, Counter()).items() }
-    
+    return {
+        k: round(v / n_summaries, 3)
+        for k, v in sum(random_node_summaries, Counter()).items()
+    }
+
 
 def _yield_random_node_summaries(play, n):
     for _ in range(n):
@@ -49,4 +60,4 @@ def generate_random_edge_weight():
         5.35,
         3.48,
     )  # result of analysis.collection_level_analysis.mean_and_std_edge_weight()
-    return math.sqrt( numpy.random.normal(mu, std)**2 )
+    return math.sqrt(numpy.random.normal(mu, std) ** 2)
