@@ -1,0 +1,63 @@
+---
+title: "PCA Analysis"
+output: html_notebook
+---
+
+```{r setup}
+knitr::opts_knit$set(root.dir = "../../")
+```
+
+```{r,message=FALSE,echo=FALSE}
+library(tidyverse)
+library(broom)
+library(factoextra)
+```
+
+```{r, message=FALSE}
+char_data <- read_csv("data/normalized_character_data.csv") %>%
+  rename(w_degree=weighted_degree, betweenness=flow_betweenness, cluster=clustering_coefficient)
+head(char_data,10)
+```
+
+# PCA Analysis
+
+```{r}
+pca_analysis <- function(character_data) {
+  numerical_columns <- character_data %>%
+    select(degree, w_degree, closeness, betweenness, cluster)
+  
+  pca_result <- numerical_columns %>%
+    prcomp(scale=TRUE)
+  
+  aug_character_data <- character_data %>%
+    bind_cols(as_tibble(pca_result$x))
+  
+  return(aug_character_data)
+}
+```
+
+### Archetypes
+```{r}
+full_pca <- pca_analysis(char_data)
+
+ggplot(data=full_pca) +
+  geom_point(mapping=aes(x=PC1, y=PC2, color=archetype))
+
+```
+
+### Gender
+```{r}
+ggplot(data=full_pca) +
+  geom_point(mapping=aes(x=PC1, y=PC2, color=gender))
+```
+
+### The Servi
+```{r}
+innamorati_data <- char_data %>%
+  filter(character %in% c("Pedrolino", "Arlecchino", "Burattino"))
+
+innamorati_pca <- pca_analysis(innamorati_data)
+ggplot(data=innamorati_pca) +
+  geom_point(mapping=aes(x=PC1, y=PC2, color=character))
+
+```

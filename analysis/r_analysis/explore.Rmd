@@ -74,3 +74,12 @@ char_data %>%
   dplyr::filter(character == "Franceschina" | ( archetype == "SERVI" & gender == "MALE" ) ) %>%
   ggscatmat(columns = 6:9, alpha=0.8, color="gender")
 ```
+
+### Servant vs. Master
+```{r}
+servant_master_data <- char_data %>%
+  mutate(is_servant = if_else(archetype == "SERVI", TRUE, FALSE) )
+
+ggscatmat(servant_master_data, columns = 6:9, alpha=0.8, color="is_servant")
+
+```

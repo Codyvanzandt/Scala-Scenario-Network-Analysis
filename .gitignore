@@ -105,3 +105,4 @@ venv.bak/
 
 # editor stuff
 .theia/
+.Rproj.user
