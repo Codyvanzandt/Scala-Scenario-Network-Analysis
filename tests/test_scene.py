@@ -2,6 +2,7 @@ from backend.scene import Scene
 import pytest
 import networkx as nx
 from unittest.mock import patch
+from itertools import chain, product, combinations
 
 
 # Fixtures
@@ -81,24 +82,14 @@ def test_remove_character(default_scene, character):
 
 
 def test_add_all_character_relationships(default_scene, multiple_characters):
-    for character in multiple_characters:
-        default_scene.add_character(character)
-
-    default_scene.add_all_character_relationships()
-
-    # Assert that the scene contains exactly one edge for every unique pair of characters in the scene combinations( characters_in_scene, 2 )
-    assert set(default_scene.character_graph.edges()) == set(
-        default_scene._get_unique_character_pairs()
-    )
+    onstage, entering = multiple_characters[:2], multiple_characters[2:]
+    default_scene.add_all_character_relationships(onstage=onstage, entering=entering)
+    expected_edges = set(chain(product(onstage, entering), combinations(entering, 2)))
+    for u, v in default_scene.character_graph.edges():
+        assert ((u, v) in expected_edges) ^ ((v, u) in expected_edges)
 
 
 def test__add_character_relationship(default_scene, two_characters):
     default_scene._add_character_relationship(*two_characters)
     assert default_scene.character_graph.has_edge(*two_characters)
     assert default_scene.character_graph.get_edge_data(*two_characters)["weight"] == 1
-
-
-@patch("backend.scene.combinations")
-def test__get_unique_character_pairs(mock_combinations, default_scene):
-    default_scene._get_unique_character_pairs()
-    mock_combinations.assert_called_with(default_scene.character_graph.nodes(), 2)

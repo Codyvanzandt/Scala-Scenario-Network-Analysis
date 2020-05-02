@@ -1,5 +1,5 @@
 import networkx as nx
-from itertools import combinations
+from itertools import combinations, product, chain
 import re
 
 
@@ -34,15 +34,14 @@ class Scene:
     def remove_character(self, character):
         self.character_graph.remove_node(character)
 
-    def add_all_character_relationships(self):
-        for character_pair in self._get_unique_character_pairs():
-            self._add_character_relationship(*character_pair)
+    def add_all_character_relationships(self, onstage=tuple(), entering=tuple()):
+        old_with_new = product(onstage, entering)
+        new_with_new = combinations(entering, 2)
+        for char_pair in chain(old_with_new, new_with_new):
+            self._add_character_relationship(*char_pair)
 
     def _add_character_relationship(self, u, v):
         if self.character_graph.has_edge(u, v):
             self.character_graph[u][v]["weight"] += 1
         else:
             self.character_graph.add_edge(u, v, weight=1)
-
-    def _get_unique_character_pairs(self):
-        return combinations(self.get_characters(), 2)

@@ -1,13 +1,23 @@
 import re
 import os
+import copy
 import networkx
 from backend.play import Play
 from backend.scene import Scene
 from utils.manipulate_play import update_with_complete_graph
 
 
-def get_combined_play_graph():
-    return networkx.readwrite.edgelist.read_weighted_edgelist("data/combined_edgelist")
+def get_combined_play_graph(edge_list_path):
+    g = networkx.Graph()
+    with open(edge_list_path, "r") as input_file:
+        for line in input_file:
+            u,v,w = line.split()
+            if g.has_edge(u,v):
+                g[u][v]["weight"] += int(w)
+            else:
+                g.add_edge(u, v, weight=1)
+    return g
+
 
 def get_all_plays():
     for play_file in _get_play_file_names():
@@ -44,16 +54,20 @@ def load_play_from_string(play_string):
 
 def update_scene_with_new_directions(scene_obj, new_scene_string):
     directions_and_characters = parse_characters_from_scene(new_scene_string)
+    onstage = list(scene_obj.get_characters())
+    entering = list()
     for (direction, character) in directions_and_characters:
         if direction == "+":
             scene_obj.add_character(character)
+            entering.append(character)
         elif direction == "-":
             scene_obj.remove_character(character)
+            onstage.remove(character)
         else:
             raise ValueError(
                 "Invalid character prefix '{direction}' for character '{character}'"
             )
-    scene_obj.add_all_character_relationships()
+    scene_obj.add_all_character_relationships(onstage=onstage, entering=entering)
     return scene_obj
 
 

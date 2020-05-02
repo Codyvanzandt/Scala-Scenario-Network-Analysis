@@ -8,6 +8,9 @@ Method Notes
     Where possible, alternative masks (Isabella -> Aliffa) were resolved to the more famous version (Isabella)
     Disguised characters are labled with their original mask, not the disguise
 
+node2vec Notes
+    d=16, l=8, r=10,000 and 100,000, (p,q) = (1,0.5) and (1,2)
+
 Questions
     Do roles with non-specific genders (Innkeeper) have a male or female gender structure?
     Do Franceschina innkeepers perform female functions? Burattinos male?
