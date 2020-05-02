@@ -1,9 +1,13 @@
 import re
 import os
+import networkx
 from backend.play import Play
 from backend.scene import Scene
 from utils.manipulate_play import update_with_complete_graph
 
+
+def get_combined_play_graph():
+    return networkx.readwrite.edgelist.read_weighted_edgelist("data/combined_edgelist")
 
 def get_all_plays():
     for play_file in _get_play_file_names():
