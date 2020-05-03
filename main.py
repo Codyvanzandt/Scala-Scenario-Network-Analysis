@@ -23,22 +23,23 @@ from csv import DictReader, DictWriter
 from collections import defaultdict
 from gensim.models import Word2Vec
 
-s100k = Word2Vec.load("models/structural_100000.model")
-char_to_vec = extract_char_vectors(s100k)
+# s100k = Word2Vec.load("models/structural_100000.model")
+# char_to_vec = extract_char_vectors(s100k)
 
-with open("data/character_vectors.csv", "w") as output_file:
-    headers = ["character", "archetype", "gender"] + [ f"d{i}" for i in range(16) ]
-    output_file.write(",".join(headers) + "\n")
-    for char, vector in char_to_vec.items():
-        char_obj = get_character(char)
-        char_vect = ",".join(str(val) for val in vector)
-        char_data = f"{char_obj.name},{char_obj.archetype.name},{char_obj.gender.name}"
-        new_line = "\n"
-        line = f"{char_data},{char_vect}{new_line}"
-        output_file.write(line)
+# with open("data/character_vectors.csv", "w") as output_file:
+#     headers = ["character", "archetype", "gender"] + [f"d{i}" for i in range(16)]
+#     output_file.write(",".join(headers) + "\n")
+#     for char, vector in char_to_vec.items():
+#         char_obj = get_character(char)
+#         char_vect = ",".join(str(val) for val in vector)
+#         char_data = f"{char_obj.name},{char_obj.archetype.name},{char_obj.gender.name}"
+#         new_line = "\n"
+#         line = f"{char_data},{char_vect}{new_line}"
+#         output_file.write(line)
 
 
-# g = get_combined_play_graph("data/combined_edgelist_2")
+g = get_combined_play_graph("data/combined_edgelist_2")
+p = Play(graph=g)
 # s10k = build_node_embedding_model(g, d=16, p=1, q=2, r=8, l=10000)
 # kmd = kmeans_classify(s10k, k=4)
 # r = defaultdict(list)
@@ -52,18 +53,18 @@ with open("data/character_vectors.csv", "w") as output_file:
 
 
 # CUMULATIVE CHARACTER DATA
-# with open("data/cum_character_data.csv", "w") as output_file:
-#     headers = ["character", "archetype", "gender", "degree", "weighted_degree", "closeness", "flow_betweenness", "clustering_coefficient"]
-#     writer = DictWriter(output_file, headers)
-#     writer.writeheader()
-#     for char in g.nodes():
-#         char_obj = get_character(char)
-#         char_data = summarize_node(p, char)
-#         char_data["archetype"] = char_obj.archetype.name
-#         char_data["character"] = char_obj.name
-#         char_data["gender"] = char_obj.gender.name
-#         char_data.pop("name")
-#         writer.writerow(char_data)
+with open("data/cum_character_data_2.csv", "w") as output_file:
+    headers = ["character", "archetype", "gender", "degree", "weighted_degree", "closeness", "flow_betweenness", "clustering_coefficient"]
+    writer = DictWriter(output_file, headers)
+    writer.writeheader()
+    for char in g.nodes():
+        char_obj = get_character(char)
+        char_data = summarize_node(p, char)
+        char_data["archetype"] = char_obj.archetype.name
+        char_data["character"] = char_obj.name
+        char_data["gender"] = char_obj.gender.name
+        char_data.pop("name")
+        writer.writerow(char_data)
 
 
 # with open("data/rel_character_interaction_data.csv", "w") as output_file:

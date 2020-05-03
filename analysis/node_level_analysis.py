@@ -1,6 +1,6 @@
 from networkx.algorithms.centrality import (
     closeness_centrality,
-    current_flow_betweenness_centrality,
+    betweenness_centrality,
 )
 from networkx.algorithms.distance_measures import eccentricity
 from networkx.algorithms.cluster import clustering
@@ -29,7 +29,7 @@ def flow_betweenness(play, node):
 
 @lru_cache(maxsize=2)
 def _get_flow_betweenness_dict(play):
-    return current_flow_betweenness_centrality(play.graph, weight="weight")
+    return betweenness_centrality(play.graph, weight="weight")
 
 
 def clustering_coefficient(play, node):
