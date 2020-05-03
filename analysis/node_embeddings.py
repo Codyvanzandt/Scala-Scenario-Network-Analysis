@@ -3,7 +3,17 @@ from node2vec import Node2Vec
 
 
 def build_node_embedding_model(G, d, p, q, r, l):
-    return Node2Vec(graph=G, dimensions=d, walk_length=l, num_walks=r, p=p, q=q, weight_key="weight", workers=16).fit()
+    return Node2Vec(
+        graph=G,
+        dimensions=d,
+        walk_length=l,
+        num_walks=r,
+        p=p,
+        q=q,
+        weight_key="weight",
+        workers=16,
+    ).fit()
+
 
 def extract_char_vectors(model):
     char_vectors = dict()

@@ -11,8 +11,8 @@ def get_combined_play_graph(edge_list_path):
     g = networkx.Graph()
     with open(edge_list_path, "r") as input_file:
         for line in input_file:
-            u,v,w = line.split()
-            if g.has_edge(u,v):
+            u, v, w = line.split()
+            if g.has_edge(u, v):
                 g[u][v]["weight"] += int(w)
             else:
                 g.add_edge(u, v, weight=1)

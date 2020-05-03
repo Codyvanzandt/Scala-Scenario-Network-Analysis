@@ -8,6 +8,7 @@ from analysis.kmeans import kmeans_classify
 from analysis.play_level_analysis import summarize_play
 from analysis.collection_level_analysis import *
 from analysis.node_embeddings import build_node_embedding_model, extract_char_vectors
+from analysis.kmeans import kmeans_classify
 from utils.random_graphs import generate_similar_random_graph
 from utils.load_play import get_all_plays, get_combined_play_graph
 from backend.character import get_character
@@ -23,7 +24,27 @@ from collections import defaultdict
 from gensim.models import Word2Vec
 
 s100k = Word2Vec.load("models/structural_100000.model")
-pprint(kmeans_classify(s100k,4))
+char_to_vec = extract_char_vectors(s100k)
+
+with open("data/character_vectors.csv", "w") as output_file:
+    headers = ["character"] + [f"d{i}" for i in range(16)]
+    output_file.write(",".join(headers)+"\n")
+    for char, vector in char_to_vec.items():
+        line = f"{get_character(char).name}," + ",".join( str(val) for val in vector ) + "\n"
+        output_file.write(line)
+
+
+# g = get_combined_play_graph("data/combined_edgelist_2")
+# s10k = build_node_embedding_model(g, d=16, p=1, q=2, r=8, l=10000)
+# kmd = kmeans_classify(s10k, k=4)
+# r = defaultdict(list)
+# for char, lab in kmd.items():
+#     r[lab].append(char)
+# pprint(r)
+
+
+# s100k = Word2Vec.load("models/structural_100000.model")
+# pprint(kmeans_classify(s100k, 4))
 
 
 # CUMULATIVE CHARACTER DATA
@@ -39,7 +60,7 @@ pprint(kmeans_classify(s100k,4))
 #         char_data["gender"] = char_obj.gender.name
 #         char_data.pop("name")
 #         writer.writerow(char_data)
-    
+
 
 # with open("data/rel_character_interaction_data.csv", "w") as output_file:
 #     header = ",".join( ["character", "archetype", "gender"] + char_vector )
@@ -47,7 +68,7 @@ pprint(kmeans_classify(s100k,4))
 #     for char in char_vector:
 #         total_char_edge_weight = g.degree(nbunch=char,weight="weight")
 #         char_obj = get_character(char)
-#         char_qual_data = [ char_obj.name, char_obj.archetype.name, char_obj.gender.name ] 
+#         char_qual_data = [ char_obj.name, char_obj.archetype.name, char_obj.gender.name ]
 #         char_quant_data = [ str( g.get_edge_data(char,char2,{"weight":0})["weight"] / total_char_edge_weight ) for char2 in char_vector ]
 #         line = ",".join( char_qual_data + char_quant_data )
 #         output_file.write(f"{line}\n")
