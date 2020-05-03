@@ -89,7 +89,8 @@ get_contributions <- function(pca_model, by="PC1"){
 ## Cumulative Character Data
 ```{r}
 cum_char_data <- read_csv("data/cum_character_data.csv") %>%
-  rename(w_degree=weighted_degree, betweenness=flow_betweenness, cluster=clustering_coefficient)
+  rename(w_degree=weighted_degree, betweenness=flow_betweenness, cluster=clustering_coefficient) %>%
+  select(-degree, -w_degree)
 head(cum_char_data)
 
 cum_char_pca <- pca_analysis(cum_char_data)
@@ -101,21 +102,9 @@ ggplot(data=cum_char_pca, aes(x=PC1, y=PC2, )) +
   geom_jitter(mapping=aes(color=archetype)) +
   geom_text_repel(aes(label=character), size=3,)
 ```
-### Major Cumulative Character Data
-```{r}
-major_char <- c("Orazio", "Flavio", "Isabella", "Flaminia", "Pantalone", "Graziano", "Pedrolino", "Arlecchino", "Franceschina", "Capitano")
-maj_cum_char_data <- cum_char_data %>%
-  filter(character %in% major_char)
 
-maj_cum_char_pca <- pca_analysis(maj_cum_char_data)
-maj_cum_char_model <- pca_analysis_model(maj_cum_char_data)
-
-ggplot(data=maj_cum_char_pca, aes(x=PC1, y=PC2, )) +
-  geom_jitter(mapping=aes(color=archetype)) +
-  geom_text_repel(aes(label=character), size=3,)
-```
 ```{r}
-get_contributions(maj_cum_char_model, by="PC2")
+get_contributions(cum_char_model, by="PC1")
 ```
 
 ### PCA Contributions
@@ -166,3 +155,12 @@ get_contributions(rel_int_model) %>%
 ```
 
 ## Node Embedding Data
+```{r}
+char_vec_data <- read_csv("data/character_vectors.csv")
+char_vec_pca <- pca_analysis(char_vec_data)
+char_vec_model <- pca_analysis_model(char_vec_data)
+
+ggplot(data=char_vec_pca, aes(x=PC1, y=PC2, )) +
+  geom_jitter(mapping=aes(color=archetype)) +
+  geom_text_repel(aes(label=character), size=3,)
+```
