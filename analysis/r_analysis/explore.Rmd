@@ -83,3 +83,30 @@ servant_master_data <- char_data %>%
 ggscatmat(servant_master_data, columns = 6:9, alpha=0.8, color="is_servant")
 
 ```
+
+# Explore Part II: Full Play Data
+
+### Data
+```{r}
+cum_char_data <- read_csv("data/cum_character_data.csv") %>%
+  rename(w_degree=weighted_degree, betweenness=flow_betweenness, cluster=clustering_coefficient)
+head(cum_char_data)
+```
+
+### Gender
+```{r}
+ggscatmat(cum_char_data, columns = 6:8, alpha=0.8, color="gender")
+```
+
+### Archetype
+```{r}
+ggscatmat(cum_char_data, columns = 6:8, alpha=0.8, color="archetype")
+```
+
+### Servants vs. Masters
+```{r}
+ser_ma_cum <- cum_char_data %>%
+  mutate(is_servant = if_else(archetype == "SERVI", TRUE, FALSE) )
+
+ggscatmat(ser_ma_cum, columns = 6:9, alpha=0.8, color="is_servant")
+```

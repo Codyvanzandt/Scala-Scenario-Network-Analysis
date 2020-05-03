@@ -11,6 +11,7 @@ knitr::opts_knit$set(root.dir = "../../")
 library(tidyverse)
 library(broom)
 library(factoextra)
+library(ggrepel)
 ```
 
 ```{r, message=FALSE}
@@ -24,7 +25,7 @@ head(char_data,10)
 ```{r}
 pca_analysis <- function(character_data) {
   numerical_columns <- character_data %>%
-    select(degree, w_degree, closeness, betweenness, cluster)
+    keep(is.numeric)
   
   pca_result <- numerical_columns %>%
     prcomp(scale=TRUE)
@@ -33,6 +34,15 @@ pca_analysis <- function(character_data) {
     bind_cols(as_tibble(pca_result$x))
   
   return(aug_character_data)
+}
+
+pca_analysis_model <- function(character_data) {
+  numerical_columns <- character_data %>%
+    keep(is.numeric)
+  
+  pca_result <- numerical_columns %>%
+    prcomp(scale=TRUE)
+  return(pca_result)
 }
 ```
 
@@ -61,3 +71,98 @@ ggplot(data=innamorati_pca) +
   geom_point(mapping=aes(x=PC1, y=PC2, color=character))
 
 ```
+
+# PCA Part II
+
+```{r}
+get_contributions <- function(pca_model, by="PC1"){
+  rotation <- abs(pca_model$rotation)
+  contrib_matrix <- sweep(rotation, 2, colSums(rotation), "/")
+  contributions <- as_tibble( contrib_matrix, rownames=NA ) %>%
+    mutate(char = rownames(contrib_matrix)) %>%
+    select(char, !!sym(by), everything()) %>%
+    arrange(desc(!!sym(by)))
+  return(contributions)
+}
+```
+
+## Cumulative Character Data
+```{r}
+cum_char_data <- read_csv("data/cum_character_data.csv") %>%
+  rename(w_degree=weighted_degree, betweenness=flow_betweenness, cluster=clustering_coefficient)
+head(cum_char_data)
+
+cum_char_pca <- pca_analysis(cum_char_data)
+
+cum_char_model <- pca_analysis_model(cum_char_data)
+```
+```{r}
+ggplot(data=cum_char_pca, aes(x=PC1, y=PC2, )) +
+  geom_jitter(mapping=aes(color=archetype)) +
+  geom_text_repel(aes(label=character), size=3,)
+```
+### Major Cumulative Character Data
+```{r}
+major_char <- c("Orazio", "Flavio", "Isabella", "Flaminia", "Pantalone", "Graziano", "Pedrolino", "Arlecchino", "Franceschina", "Capitano")
+maj_cum_char_data <- cum_char_data %>%
+  filter(character %in% major_char)
+
+maj_cum_char_pca <- pca_analysis(maj_cum_char_data)
+maj_cum_char_model <- pca_analysis_model(maj_cum_char_data)
+
+ggplot(data=maj_cum_char_pca, aes(x=PC1, y=PC2, )) +
+  geom_jitter(mapping=aes(color=archetype)) +
+  geom_text_repel(aes(label=character), size=3,)
+```
+```{r}
+get_contributions(maj_cum_char_model, by="PC2")
+```
+
+### PCA Contributions
+```{r}
+get_contributions <- function(pca_model){
+  rotation <- abs(pca_model$rotation)
+  contrib_matrix <- sweep(rotation, 2, colSums(rotation), "/")
+  contributions <- as_tibble( contrib_matrix, rownames=NA ) %>%
+    mutate(char = rownames(contrib_matrix)) %>%
+    select(char, PC1, everything()) %>%
+    arrange(desc(PC1))
+  return(contributions)
+}
+get_contributions(cum_char_model)
+```
+
+
+## Raw Character Interaction Data
+```{r}
+raw_int_data <- read_csv("data/raw_character_interaction_data.csv")
+raw_int_pca <- pca_analysis(raw_int_data)
+raw_int_model <- pca_analysis_model(raw_int_data)
+head(raw_int_data)
+```
+
+```{r}
+ggplot(data=raw_int_pca, aes(x=PC1, y=PC2, )) +
+  geom_jitter(mapping=aes(color=archetype)) +
+  geom_text_repel(aes(label=character), size=3,)
+```
+## Relative Character Interaction Data
+```{r}
+rel_int_data <- read_csv("data/rel_character_interaction_data.csv")
+rel_int_pca <- pca_analysis(rel_int_data)
+rel_int_model <-pca_analysis_model(rel_int_data)
+head(rel_int_data)
+```
+
+```{r}
+ggplot(data=rel_int_pca, aes(x=PC1, y=PC2, )) +
+  geom_jitter(mapping=aes(color=archetype)) +
+  geom_text_repel(aes(label=character), size=3,)
+```
+
+```{r}
+get_contributions(rel_int_model) %>%
+  arrange(PC2)
+```
+
+## Node Embedding Data
