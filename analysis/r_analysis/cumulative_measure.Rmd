@@ -1,0 +1,41 @@
+---
+title: "Cumulative Measure Exploration"
+output: html_notebook
+---
+
+```{r setup}
+knitr::opts_knit$set(root.dir = "../../")
+```
+
+```{r,message=FALSE,echo=FALSE}
+library(tidyverse)
+library(broom)
+library(factoextra)
+library(ggrepel)
+```
+
+```{r}
+char_count <- read_csv("data/all_character_data.csv") %>%
+  group_by(character) %>%
+  summarize(count=n())
+head(char_count)
+```
+
+```{r}
+rel_cum_char_data <- read_csv("data/cum_character_data.csv") %>%
+  rename(w_degree=weighted_degree, betweenness=flow_betweenness, cluster=clustering_coefficient) %>%
+  select(-degree, -w_degree) %>%
+  left_join(select(char_count, count, character), by="character") %>%
+  mutate(betweenness = betweenness / count) %>%
+  mutate(cluster = cluster / count) %>%
+  mutate(closeness = closeness / count) %>%
+  mutate(norm_betw = scale(betweenness, center=FALSE)) %>%
+  mutate(norm_clos = scale(closeness, center=FALSE)) %>%
+  mutate(norm_clus = scale(cluster, center=FALSE)) %>%
+  mutate(bet_clus = 0.5 * norm_betw + 0.5 * norm_clus) %>%
+  mutate(clos_clus = 0.67 * norm_clos + 0.33 * norm_clus) %>%
+  select(character, archetype, gender, betweenness, closeness, cluster,)
+
+head(rel_cum_char_data, 30)
+  
+```

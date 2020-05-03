@@ -44,6 +44,16 @@ pca_analysis_model <- function(character_data) {
     prcomp(scale=TRUE)
   return(pca_result)
 }
+
+get_contributions <- function(pca_model, by="PC1"){
+  rotation <- abs(pca_model$rotation)
+  contrib_matrix <- sweep(rotation, 2, colSums(rotation), "/")
+  contributions <- as_tibble( contrib_matrix, rownames=NA ) %>%
+    mutate(char = rownames(contrib_matrix)) %>%
+    select(char, !!sym(by), everything()) %>%
+    arrange(desc(!!sym(by)))
+  return(contributions)
+}
 ```
 
 ### Archetypes
@@ -74,18 +84,6 @@ ggplot(data=innamorati_pca) +
 
 # PCA Part II
 
-```{r}
-get_contributions <- function(pca_model, by="PC1"){
-  rotation <- abs(pca_model$rotation)
-  contrib_matrix <- sweep(rotation, 2, colSums(rotation), "/")
-  contributions <- as_tibble( contrib_matrix, rownames=NA ) %>%
-    mutate(char = rownames(contrib_matrix)) %>%
-    select(char, !!sym(by), everything()) %>%
-    arrange(desc(!!sym(by)))
-  return(contributions)
-}
-```
-
 ## Cumulative Character Data
 ```{r}
 cum_char_data <- read_csv("data/cum_character_data.csv") %>%
@@ -96,30 +94,31 @@ head(cum_char_data)
 cum_char_pca <- pca_analysis(cum_char_data)
 
 cum_char_model <- pca_analysis_model(cum_char_data)
+
+rel_cum_char_pca <- pca_analysis(rel_cum_char_data)
+rel_cum_char_model <- pca_analysis_model(rel_cum_char_data)
 ```
+
 ```{r}
 ggplot(data=cum_char_pca, aes(x=PC1, y=PC2, )) +
   geom_jitter(mapping=aes(color=archetype)) +
   geom_text_repel(aes(label=character), size=3,)
 ```
-
 ```{r}
 get_contributions(cum_char_model, by="PC1")
 ```
 
-### PCA Contributions
+### Character Data, Normalized by Appearances
 ```{r}
-get_contributions <- function(pca_model){
-  rotation <- abs(pca_model$rotation)
-  contrib_matrix <- sweep(rotation, 2, colSums(rotation), "/")
-  contributions <- as_tibble( contrib_matrix, rownames=NA ) %>%
-    mutate(char = rownames(contrib_matrix)) %>%
-    select(char, PC1, everything()) %>%
-    arrange(desc(PC1))
-  return(contributions)
-}
-get_contributions(cum_char_model)
+ggplot(data=rel_cum_char_pca, aes(x=PC1, y=PC2, )) +
+  geom_jitter(mapping=aes(color=archetype)) +
+  geom_text_repel(aes(label=character), size=3,)
 ```
+
+```{r}
+get_contributions(rel_cum_char_model, by="PC1")
+```
+
 
 
 ## Raw Character Interaction Data
@@ -163,4 +162,6 @@ char_vec_model <- pca_analysis_model(char_vec_data)
 ggplot(data=char_vec_pca, aes(x=PC1, y=PC2, )) +
   geom_jitter(mapping=aes(color=archetype)) +
   geom_text_repel(aes(label=character), size=3,)
+
+head(char_vec_data)
 ```
