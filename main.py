@@ -27,10 +27,14 @@ s100k = Word2Vec.load("models/structural_100000.model")
 char_to_vec = extract_char_vectors(s100k)
 
 with open("data/character_vectors.csv", "w") as output_file:
-    headers = ["character"] + [f"d{i}" for i in range(16)]
-    output_file.write(",".join(headers)+"\n")
+    headers = ["character", "archetype", "gender"] + [ f"d{i}" for i in range(16) ]
+    output_file.write(",".join(headers) + "\n")
     for char, vector in char_to_vec.items():
-        line = f"{get_character(char).name}," + ",".join( str(val) for val in vector ) + "\n"
+        char_obj = get_character(char)
+        char_vect = ",".join(str(val) for val in vector)
+        char_data = f"{char_obj.name},{char_obj.archetype.name},{char_obj.gender.name}"
+        new_line = "\n"
+        line = f"{char_data},{char_vect}{new_line}"
         output_file.write(line)
 
 
