@@ -1,0 +1,287 @@
+character,archetype,gender,play,degree,weighted_degree,closeness,flow_betweenness,clustering_coefficient
+Orazio,INNAMORATI,MALE,The Man Presumed Dead,1.0,0.503,1.683,0.0,1.153
+Isabella,INNAMORATI,FEMALE,The Man Presumed Dead,1.0,0.664,1.584,0.0,1.363
+Pantalone,VECCHI,MALE,The Man Presumed Dead,1.0,0.483,1.683,0.0,1.126
+Pedrolino,SERVI,MALE,The Man Presumed Dead,1.0,0.543,1.584,0.0,1.212
+Laura,VECCHI,FEMALE,The Man Presumed Dead,1.0,0.543,1.584,0.0,1.212
+Flaminia,INNAMORATI,FEMALE,The Man Presumed Dead,1.0,0.523,1.584,0.0,1.194
+Burattino,SERVI,MALE,The Man Presumed Dead,1.0,0.523,1.796,0.104,1.137
+Capitano,CAPITANI,MALE,The Man Presumed Dead,1.0,0.483,1.683,0.0,1.121
+Flavio,INNAMORATI,MALE,The Man Presumed Dead,1.0,0.503,1.683,0.0,1.153
+Arlecchino,SERVI,MALE,The Man Presumed Dead,1.0,0.181,2.994,6.015,0.645
+Orazio,INNAMORATI,MALE,The Faithful Loving Pilgrim,1.0,0.341,1.943,0.448,0.836
+Isabella,INNAMORATI,FEMALE,The Faithful Loving Pilgrim,1.0,0.482,1.511,0.045,1.008
+Capitano,CAPITANI,MALE,The Faithful Loving Pilgrim,1.0,0.341,1.943,0.627,0.844
+Pedrolino,SERVI,MALE,The Faithful Loving Pilgrim,1.0,0.602,1.598,0.037,1.164
+Pantalone,VECCHI,MALE,The Faithful Loving Pilgrim,1.0,0.482,1.698,0.09,1.032
+Flaminia,INNAMORATI,FEMALE,The Faithful Loving Pilgrim,1.0,0.502,1.698,0.037,1.04
+Franceschina,SERVI,FEMALE,The Faithful Loving Pilgrim,1.0,0.421,1.813,0.455,0.949
+Arlecchino,SERVI,MALE,The Faithful Loving Pilgrim,1.0,0.562,1.045,0.0,1.175
+Flavio,INNAMORATI,MALE,The Faithful Loving Pilgrim,1.0,0.321,1.943,0.799,0.801
+Graziano,VECCHI,MALE,The Faithful Loving Pilgrim,1.0,0.241,2.266,1.582,0.704
+Isabella,INNAMORATI,FEMALE,The Portrait,1.065,0.769,1.471,0.0,1.266
+Pedrolino,SERVI,MALE,The Portrait,1.065,0.682,1.044,0.0,1.198
+Capitano,CAPITANI,MALE,The Portrait,0.871,0.297,1.797,1.805,0.879
+Arlecchino,SERVI,MALE,The Portrait,1.065,0.717,1.347,0.305,1.192
+Silvia,INNAMORATI,FEMALE,The Portrait,0.871,0.472,1.294,0.068,1.207
+Flaminia,INNAMORATI,FEMALE,The Portrait,1.065,0.629,1.541,0.381,1.124
+Graziano,VECCHI,MALE,The Portrait,1.065,0.35,1.703,1.322,0.787
+Pantalone,VECCHI,MALE,The Portrait,1.065,0.525,1.294,0.0,1.015
+Flavio,INNAMORATI,MALE,The Portrait,1.065,0.525,1.618,0.508,1.024
+Orazio,INNAMORATI,MALE,The Portrait,1.065,0.559,1.541,0.458,1.056
+Vittoria,CAPITANI,FEMALE,The Portrait,0.871,0.315,1.541,0.585,0.899
+Piombino,SERVI,MALE,The Portrait,0.871,0.35,1.541,0.568,0.941
+Orazio,INNAMORATI,MALE,The Captain,1.0,0.841,0.854,0.0,1.228
+Isabella,INNAMORATI,FEMALE,The Captain,1.222,0.801,0.83,0.0,1.196
+Pedrolino,SERVI,MALE,The Captain,1.0,0.861,0.83,0.0,1.245
+Franceschina,SERVI,FEMALE,The Captain,1.0,0.601,1.012,0.067,1.016
+Pantalone,VECCHI,MALE,The Captain,1.0,0.721,0.881,0.0,1.129
+Graziano,VECCHI,MALE,The Captain,1.0,0.741,0.739,0.0,1.172
+Capitano,CAPITANI,MALE,The Captain,1.222,0.701,0.912,0.0,1.097
+Arlecchino,SERVI,MALE,The Captain,1.0,0.681,0.942,0.0,1.083
+Flaminia,INNAMORATI,FEMALE,The Captain,1.0,0.721,0.83,0.0,1.134
+Cassandro,VECCHI,MALE,The Captain,1.0,0.381,1.441,3.179,0.788
+Orazio,INNAMORATI,MALE,The Jealous Old Man,1.017,0.808,1.092,0.0,1.437
+Flavio,INNAMORATI,MALE,The Jealous Old Man,1.017,0.955,0.846,0.0,1.601
+Pedrolino,SERVI,MALE,The Jealous Old Man,1.22,1.12,0.689,0.0,1.745
+Pantalone,VECCHI,MALE,The Jealous Old Man,1.119,0.918,1.058,0.0,1.305
+Isabella,INNAMORATI,FEMALE,The Jealous Old Man,1.119,0.918,1.058,0.0,1.305
+Flaminia,INNAMORATI,FEMALE,The Jealous Old Man,1.119,0.771,1.354,0.992,1.167
+Graziano,VECCHI,MALE,The Jealous Old Man,1.322,0.992,1.092,0.049,1.346
+Cavicchio,SERVI,MALE,The Jealous Old Man,0.407,0.073,1.166,0.893,0.632
+Burattino,SERVI,MALE,The Jealous Old Man,1.017,0.753,0.735,0.0,1.409
+Olivetta,SERVI,FEMALE,The Jealous Old Man,1.017,0.349,1.612,3.902,0.862
+Pasquella,SERVI,FEMALE,The Jealous Old Man,1.017,0.533,1.058,0.0,1.138
+Capitano,CAPITANI,MALE,The Jealous Old Man,1.017,0.477,1.209,0.049,1.066
+Orazio,INNAMORATI,MALE,The Tragic Events,1.122,0.425,1.903,0.326,0.976
+Flavio,INNAMORATI,MALE,The Tragic Events,1.122,0.465,1.799,0.167,1.031
+Burattino,SERVI,MALE,The Tragic Events,0.449,0.162,1.472,0.0,1.284
+Pantalone,VECCHI,MALE,The Tragic Events,1.01,0.344,1.903,0.182,1.07
+Pedrolino,SERVI,MALE,The Tragic Events,1.01,0.344,1.903,0.197,1.07
+Flaminia,INNAMORATI,FEMALE,The Tragic Events,1.01,0.324,2.023,0.659,1.015
+Franceschina,SERVI,FEMALE,The Tragic Events,1.235,0.526,1.246,0.0,1.373
+Graziano,VECCHI,MALE,The Tragic Events,1.122,0.364,2.159,0.985,0.933
+Arlecchino,SERVI,MALE,The Tragic Events,1.01,0.344,1.702,0.083,1.107
+Isabella,INNAMORATI,FEMALE,The Tragic Events,1.122,0.344,2.023,0.72,0.908
+Capitano,CAPITANI,MALE,The Tragic Events,1.01,0.222,2.489,1.235,0.856
+Graziano,VECCHI,MALE,The Man Pretending Blindness,1.0,0.361,1.527,0.267,0.826
+Isabella,INNAMORATI,FEMALE,The Man Pretending Blindness,1.0,0.451,1.147,0.0,0.949
+Claudione,VECCHI,MALE,The Man Pretending Blindness,1.0,0.286,1.69,0.81,0.717
+Arlecchino,SERVI,MALE,The Man Pretending Blindness,1.0,0.406,1.527,0.248,0.874
+Ricciolina,SERVI,FEMALE,The Man Pretending Blindness,1.0,0.286,1.69,0.952,0.714
+Cinzio,INNAMORATI,MALE,The Man Pretending Blindness,1.0,0.451,1.396,0.086,0.946
+Pantalone,VECCHI,MALE,The Man Pretending Blindness,1.0,0.542,1.457,0.019,1.04
+Flaminia,INNAMORATI,FEMALE,The Man Pretending Blindness,1.0,0.421,1.604,0.848,0.866
+Pedrolino,SERVI,MALE,The Man Pretending Blindness,1.0,0.647,1.147,0.0,1.163
+Franceschina,SERVI,FEMALE,The Man Pretending Blindness,1.167,0.692,1.337,0.105,1.14
+Flavio,INNAMORATI,MALE,The Man Pretending Blindness,1.0,0.436,1.527,0.476,0.877
+Burattino,SERVI,MALE,The Man Pretending Blindness,1.0,0.361,1.888,2.648,0.763
+Orazio,INNAMORATI,MALE,The Man Pretending Blindness,1.0,0.391,1.527,0.086,0.869
+Pantalone,VECCHI,MALE,Flavio the Fake Magician,1.0,0.608,0.87,0.0,1.407
+Graziano,VECCHI,MALE,Flavio the Fake Magician,1.0,0.345,1.524,1.623,0.989
+Pedrolino,SERVI,MALE,Flavio the Fake Magician,1.0,0.624,0.953,0.0,1.41
+Capitano,CAPITANI,MALE,Flavio the Fake Magician,1.0,0.427,1.219,0.044,1.138
+Arlecchino,SERVI,MALE,Flavio the Fake Magician,1.0,0.542,0.953,0.0,1.325
+Flaminia,INNAMORATI,FEMALE,Flavio the Fake Magician,1.0,0.476,1.089,0.0,1.223
+Isabella,INNAMORATI,FEMALE,Flavio the Fake Magician,1.0,0.476,1.219,0.158,1.209
+Orazio,INNAMORATI,MALE,Flavio the Fake Magician,1.0,0.361,1.452,1.272,1.025
+Franceschina,SERVI,FEMALE,Flavio the Fake Magician,1.0,0.591,0.922,0.0,1.381
+Burattino,SERVI,MALE,Flavio the Fake Magician,1.0,0.591,1.05,0.0,1.359
+Cinzio,INNAMORATI,MALE,Flavio the Fake Magician,1.0,0.378,1.452,0.965,1.045
+Flavio,INNAMORATI,MALE,Flavio the Fake Magician,1.0,0.526,0.983,0.0,1.299
+Orazio,INNAMORATI,MALE,The Two Old Twins,1.0,0.391,1.556,0.038,0.738
+Pedrolino,SERVI,MALE,The Two Old Twins,1.0,0.797,1.362,0.0,1.134
+Flavio,INNAMORATI,MALE,The Two Old Twins,1.0,0.376,1.635,0.2,0.715
+Isabella,INNAMORATI,FEMALE,The Two Old Twins,1.0,0.497,1.485,0.029,0.849
+Pasquella,SERVI,FEMALE,The Two Old Twins,1.0,0.557,1.556,0.105,0.886
+Flaminia,INNAMORATI,FEMALE,The Two Old Twins,1.0,0.391,1.635,0.105,0.738
+Graziano,VECCHI,MALE,The Two Old Twins,1.167,0.466,1.722,0.562,0.781
+Capitano,CAPITANI,MALE,The Two Old Twins,1.0,0.361,1.722,0.324,0.687
+Arlecchino,SERVI,MALE,The Two Old Twins,1.0,0.361,1.722,0.324,0.687
+Franceschina,SERVI,FEMALE,The Two Old Twins,1.167,0.406,1.817,0.724,0.715
+Hibrahim,VECCHI,MALE,The Two Old Twins,1.0,0.196,2.515,3.543,0.493
+Pantalone,VECCHI,MALE,The Two Old Twins,1.0,0.436,1.308,0.038,0.792
+Tofano,VECCHI,MALE,The Two Old Twins,1.0,0.391,1.556,0.038,0.746
+Pantalone,VECCHI,MALE,The Fake Magician,1.047,0.526,1.362,0.471,0.904
+Pedrolino,SERVI,MALE,The Fake Magician,1.279,1.031,0.714,0.0,1.357
+Flavio,INNAMORATI,MALE,The Fake Magician,1.047,0.484,1.429,0.203,0.874
+Orazio,INNAMORATI,MALE,The Fake Magician,1.047,0.568,1.298,0.0,0.958
+Arlecchino,SERVI,MALE,The Fake Magician,1.047,0.863,0.952,0.0,1.191
+Flaminia,INNAMORATI,FEMALE,The Fake Magician,0.93,0.4,1.505,0.884,0.893
+Isabella,INNAMORATI,FEMALE,The Fake Magician,0.93,0.4,1.362,0.543,0.91
+Graziano,VECCHI,MALE,The Fake Magician,1.047,0.737,1.098,0.0,1.124
+Franceschina,SERVI,FEMALE,The Fake Magician,1.047,0.526,1.587,1.043,0.876
+Capitano,CAPITANI,MALE,The Fake Magician,0.814,0.337,1.505,1.283,0.882
+Pantalone,VECCHI,MALE,Isabella in Trouble,1.0,0.507,1.507,0.0,1.275
+Franceschina,SERVI,FEMALE,Isabella in Trouble,1.0,0.471,1.507,0.0,1.225
+Orazio,INNAMORATI,MALE,Isabella in Trouble,1.0,0.507,1.507,0.0,1.256
+Pedrolino,SERVI,MALE,Isabella in Trouble,1.0,0.724,1.507,0.0,1.567
+Flavia,INNAMORATI,FEMALE,Isabella in Trouble,1.0,0.489,1.685,0.089,1.192
+Capitano,CAPITANI,MALE,Isabella in Trouble,1.0,0.616,1.507,0.0,1.417
+Graziano,VECCHI,MALE,Isabella in Trouble,1.0,0.616,1.593,0.0,1.389
+Arlecchino,SERVI,MALE,Isabella in Trouble,1.2,0.688,1.507,0.0,1.483
+Flaminia,INNAMORATI,FEMALE,Isabella in Trouble,1.2,0.616,1.507,0.0,1.411
+Flavio,INNAMORATI,MALE,Isabella in Trouble,1.0,0.561,1.593,0.0,1.328
+Fabrizio,INNAMORATI,MALE,Isabella in Trouble,1.0,0.181,2.865,7.049,0.689
+Franceschina,SERVI,FEMALE,Flavio's Luck,1.096,0.52,1.739,0.673,0.994
+Flaminia,INNAMORATI,FEMALE,Flavio's Luck,1.096,0.55,1.739,0.673,1.025
+Capitano,CAPITANI,MALE,Flavio's Luck,1.096,0.718,1.303,0.0,1.239
+Flavio,INNAMORATI,MALE,Flavio's Luck,1.096,0.779,1.303,0.0,1.296
+Pantalone,VECCHI,MALE,Flavio's Luck,1.096,0.443,1.66,0.471,0.925
+Grillo,SERVI,MALE,Flavio's Luck,0.928,0.229,1.921,1.183,0.783
+Burattino,SERVI,MALE,Flavio's Luck,0.928,0.52,1.303,0.029,1.233
+Orazio,INNAMORATI,MALE,Flavio's Luck,1.096,0.55,1.587,0.106,1.041
+Pedrolino,SERVI,MALE,Flavio's Luck,1.096,0.611,1.461,0.029,1.123
+Graziano,VECCHI,MALE,Flavio's Luck,0.928,0.458,1.522,0.135,1.129
+Arlecchino,SERVI,MALE,Flavio's Luck,1.096,0.458,1.587,0.279,1.097
+Isabella,INNAMORATI,FEMALE,Flavio's Luck,1.096,0.489,1.587,0.173,0.991
+Cinzio,INNAMORATI,MALE,Flavio's Luck,0.759,0.244,1.522,0.058,0.931
+Lidia,INNAMORATI,FEMALE,Flavio's Luck,0.759,0.138,2.149,3.596,0.664
+Isabella,INNAMORATI,FEMALE,Isabella's Jealousy,1.161,0.578,1.339,0.0,1.316
+Pantalone,VECCHI,MALE,Isabella's Jealousy,1.065,0.525,1.339,0.093,1.152
+Graziano,VECCHI,MALE,Isabella's Jealousy,1.065,0.385,1.608,0.331,0.946
+Burattino,SERVI,MALE,Isabella's Jealousy,0.968,0.245,2.012,2.72,0.824
+Flavio,INNAMORATI,MALE,Isabella's Jealousy,1.065,0.63,1.532,0.153,1.248
+Orazio,INNAMORATI,MALE,Isabella's Jealousy,1.065,0.666,1.073,0.0,1.346
+Flaminia,INNAMORATI,FEMALE,Isabella's Jealousy,0.774,0.21,1.693,0.72,0.89
+Franceschina,SERVI,FEMALE,Isabella's Jealousy,1.065,0.525,1.693,0.347,1.14
+Capitano,CAPITANI,MALE,Isabella's Jealousy,0.968,0.49,1.398,0.0,1.254
+Arlecchino,SERVI,MALE,Isabella's Jealousy,0.968,0.42,1.693,0.627,1.11
+Pedrolino,SERVI,MALE,Isabella's Jealousy,1.065,0.578,1.339,0.0,1.233
+Fabrizio,INNAMORATI,MALE,Isabella's Jealousy,0.968,0.298,1.693,0.492,0.857
+Isabella,INNAMORATI,FEMALE,The Deserved Punishment,1.0,0.579,1.355,0.052,1.173
+Flaminia,INNAMORATI,FEMALE,The Deserved Punishment,1.0,0.759,0.846,0.0,1.393
+Franceschina,SERVI,FEMALE,The Deserved Punishment,1.222,0.779,0.967,0.0,1.393
+Flavio,INNAMORATI,MALE,The Deserved Punishment,1.0,0.46,1.428,0.172,1.003
+Pantalone,VECCHI,MALE,The Deserved Punishment,1.0,0.559,1.428,0.052,1.146
+Pedrolino,SERVI,MALE,The Deserved Punishment,1.0,0.659,1.355,0.052,1.26
+Orazio,INNAMORATI,MALE,The Deserved Punishment,1.0,0.659,1.355,0.104,1.238
+Cinzio,INNAMORATI,MALE,The Deserved Punishment,1.0,0.579,1.593,1.642,1.141
+Capitano,CAPITANI,MALE,The Deserved Punishment,1.0,0.38,1.807,3.388,0.862
+Arlecchino,SERVI,MALE,The Deserved Punishment,1.0,0.559,1.13,0.0,1.149
+Pantalone,VECCHI,MALE,The Hunt,1.0,0.574,1.404,0.211,0.832
+Graziano,VECCHI,MALE,The Hunt,1.0,0.459,1.716,1.211,0.728
+Claudione,VECCHI,MALE,The Hunt,1.0,0.443,1.716,1.211,0.717
+Burattino,SERVI,MALE,The Hunt,1.0,0.525,1.472,0.211,0.798
+Isabella,INNAMORATI,FEMALE,The Hunt,1.0,0.689,1.404,0.114,0.938
+Flaminia,INNAMORATI,FEMALE,The Hunt,1.0,0.443,1.545,0.456,0.737
+Pedrolino,SERVI,MALE,The Hunt,1.0,0.967,0.702,0.0,1.218
+Franceschina,SERVI,FEMALE,The Hunt,1.0,0.656,0.966,0.0,0.966
+Arlecchino,SERVI,MALE,The Hunt,1.0,0.394,1.545,0.439,0.697
+Orazio,INNAMORATI,MALE,The Hunt,1.0,0.541,1.545,0.456,0.807
+Capitano,CAPITANI,MALE,The Hunt,1.0,0.41,1.472,0.281,0.717
+Flavio,INNAMORATI,MALE,The Hunt,1.0,0.459,1.545,0.456,0.745
+Pantalone,VECCHI,MALE,The Broken Promise,1.257,0.708,2.07,1.282,1.12
+Burattino,SERVI,MALE,The Broken Promise,1.257,0.991,1.609,0.192,1.45
+Isabella,INNAMORATI,FEMALE,The Broken Promise,1.257,0.51,2.07,0.583,0.967
+Orazio,INNAMORATI,MALE,The Broken Promise,1.1,0.566,1.739,0.0,1.401
+Franceschina,SERVI,FEMALE,The Broken Promise,0.471,0.142,1.674,0.141,0.649
+Flavio,INNAMORATI,MALE,The Broken Promise,1.257,0.651,1.813,0.667,1.174
+Pedrolino,SERVI,MALE,The Broken Promise,1.1,0.679,1.813,0.0,1.496
+Capitano,CAPITANI,MALE,The Broken Promise,1.414,0.425,2.717,2.801,0.628
+Arlecchino,SERVI,MALE,The Broken Promise,0.629,0.226,1.552,0.429,0.707
+Graziano,VECCHI,MALE,The Broken Promise,0.157,0.028,1.448,0.0,0.0
+Flaminia,INNAMORATI,FEMALE,The Broken Promise,1.1,0.396,2.174,0.25,1.107
+Pantalone,VECCHI,MALE,"The Comic, Pastoral and Tragic Events",0.75,0.203,1.678,0.417,1.287
+Graziano,VECCHI,MALE,"The Comic, Pastoral and Tragic Events",1.0,0.428,1.372,0.069,1.623
+Pedrolino,SERVI,MALE,"The Comic, Pastoral and Tragic Events",1.125,0.473,1.51,0.021,1.452
+Burattino,SERVI,MALE,"The Comic, Pastoral and Tragic Events",1.0,0.428,1.372,0.069,1.623
+Orazio,INNAMORATI,MALE,"The Comic, Pastoral and Tragic Events",0.75,0.18,1.886,1.306,1.225
+Flavio,INNAMORATI,MALE,"The Comic, Pastoral and Tragic Events",1.25,0.496,1.208,0.0,1.704
+Isabella,INNAMORATI,FEMALE,"The Comic, Pastoral and Tragic Events",1.25,0.496,1.258,0.0,1.707
+Franceschina,SERVI,FEMALE,"The Comic, Pastoral and Tragic Events",1.125,0.428,1.678,0.299,1.38
+Capitano,CAPITANI,MALE,"The Comic, Pastoral and Tragic Events",1.375,0.519,1.51,0.104,1.503
+Flaminia,INNAMORATI,FEMALE,"The Comic, Pastoral and Tragic Events",1.125,0.383,1.775,0.493,1.296
+Isabella,INNAMORATI,FEMALE,The Two Trusty Notaries,1.0,0.82,0.723,0.0,1.203
+Franceschina,SERVI,FEMALE,The Two Trusty Notaries,1.0,0.7,0.808,0.0,1.1
+Pedrolino,SERVI,MALE,The Two Trusty Notaries,1.0,0.981,0.61,0.0,1.327
+Capitano,CAPITANI,MALE,The Two Trusty Notaries,1.0,0.64,1.098,0.828,0.986
+Flaminia,INNAMORATI,FEMALE,The Two Trusty Notaries,1.0,0.52,1.098,0.657,0.922
+Graziano,VECCHI,MALE,The Two Trusty Notaries,1.0,0.62,0.945,0.037,1.032
+Pantalone,VECCHI,MALE,The Two Trusty Notaries,1.0,0.7,0.832,0.037,1.103
+Arlecchino,SERVI,MALE,The Two Trusty Notaries,1.0,0.62,0.884,0.037,1.038
+Flavio,INNAMORATI,MALE,The Two Trusty Notaries,1.0,0.54,1.015,0.172,0.957
+Orazio,INNAMORATI,MALE,The Two Trusty Notaries,1.0,0.54,1.098,0.552,0.938
+Pantalone,VECCHI,MALE,The Tutor,1.0,0.596,1.166,0.0,1.162
+Orazio,INNAMORATI,MALE,The Tutor,1.0,0.704,0.81,0.0,1.29
+Cataldo,VECCHI,MALE,The Tutor,1.0,0.487,1.534,0.593,0.997
+Isabella,INNAMORATI,FEMALE,The Tutor,1.0,0.578,1.079,0.0,1.132
+Pedrolino,SERVI,MALE,The Tutor,1.0,0.848,0.694,0.0,1.447
+Capitano,CAPITANI,MALE,The Tutor,1.0,0.361,1.621,1.837,0.833
+Arlecchino,SERVI,MALE,The Tutor,1.0,0.451,1.268,0.398,0.978
+Flaminia,INNAMORATI,FEMALE,The Tutor,1.2,0.505,1.388,0.634,0.981
+Fabrizio,INNAMORATI,MALE,The Tutor,1.0,0.397,1.621,1.325,0.901
+Graziano,VECCHI,MALE,The Tutor,1.0,0.596,1.122,0.0,1.162
+Burattino,SERVI,MALE,The Tutor,1.0,0.379,1.534,0.39,0.885
+Pantalone,VECCHI,MALE,The Tooth Puller,1.189,0.805,1.414,0.513,1.522
+Pedrolino,SERVI,MALE,The Tooth Puller,1.338,1.1,1.078,0.0,1.462
+Franceschina,SERVI,FEMALE,The Tooth Puller,1.041,0.295,2.279,1.52,1.067
+Flavio,INNAMORATI,MALE,The Tooth Puller,1.487,0.617,1.951,0.368,1.281
+Graziano,VECCHI,MALE,The Tooth Puller,1.041,0.349,2.049,0.697,1.146
+Capitano,CAPITANI,MALE,The Tooth Puller,0.743,0.215,2.049,1.276,0.905
+Arlecchino,SERVI,MALE,The Tooth Puller,0.595,0.268,1.324,0.289,1.221
+Flaminia,INNAMORATI,FEMALE,The Tooth Puller,1.189,0.483,1.865,0.072,1.13
+Isabella,INNAMORATI,FEMALE,The Tooth Puller,1.784,0.724,2.156,1.836,0.885
+Orazio,INNAMORATI,MALE,The Tooth Puller,1.041,0.644,1.578,0.0,1.656
+Pasquella,SERVI,FEMALE,The Tooth Puller,0.149,0.027,1.463,0.0,0.0
+Orazio,INNAMORATI,MALE,Isabella the Astrologer,1.0,0.283,2.085,0.902,1.0
+Flavio,INNAMORATI,MALE,Isabella the Astrologer,1.0,0.283,2.085,0.244,0.995
+Pedrolino,SERVI,MALE,Isabella the Astrologer,1.286,0.489,1.436,0.0,1.306
+Arlecchino,SERVI,MALE,Isabella the Astrologer,1.0,0.283,2.295,0.433,0.992
+Isabella,INNAMORATI,FEMALE,Isabella the Astrologer,1.0,0.361,1.764,0.0,1.145
+Graziano,VECCHI,MALE,Isabella the Astrologer,1.0,0.283,2.551,0.64,0.982
+Cinzio,INNAMORATI,MALE,Isabella the Astrologer,1.0,0.386,1.764,0.0,1.173
+Flaminia,INNAMORATI,FEMALE,Isabella the Astrologer,1.0,0.232,2.551,0.744,0.906
+Isabella,INNAMORATI,FEMALE,The Two Identical Captains,1.0,0.261,2.116,1.522,0.739
+Franceschina,SERVI,FEMALE,The Two Identical Captains,1.0,0.521,1.529,0.052,1.078
+Flaminia,INNAMORATI,FEMALE,The Two Identical Captains,1.0,0.421,1.835,0.157,0.951
+Orazio,INNAMORATI,MALE,The Two Identical Captains,1.0,0.481,1.376,0.0,1.049
+Pantalone,VECCHI,MALE,The Two Identical Captains,1.0,0.501,1.45,0.0,1.078
+Graziano,VECCHI,MALE,The Two Identical Captains,1.0,0.341,1.835,0.0,0.868
+Capitano,CAPITANI,MALE,The Two Identical Captains,1.0,0.581,1.376,0.0,1.151
+Arlecchino,SERVI,MALE,The Two Identical Captains,1.0,0.361,2.116,0.881,0.854
+Pedrolino,SERVI,MALE,The Two Identical Captains,1.0,0.401,1.835,0.328,0.908
+Flavio,INNAMORATI,MALE,The Two Identical Captains,1.0,0.261,2.294,1.799,0.728
+Flavio,INNAMORATI,MALE,The Madness of Isabella,1.048,0.531,1.371,0.0,1.553
+Pedrolino,SERVI,MALE,The Madness of Isabella,1.048,0.531,1.371,0.042,1.539
+Orazio,INNAMORATI,MALE,The Madness of Isabella,1.153,0.701,1.371,0.0,1.553
+Isabella,INNAMORATI,FEMALE,The Madness of Isabella,1.153,0.663,1.53,0.225,1.479
+Franceschina,SERVI,FEMALE,The Madness of Isabella,1.048,0.417,1.656,0.358,1.333
+Burattino,SERVI,MALE,The Madness of Isabella,1.048,0.606,1.136,0.0,1.691
+Flaminia,INNAMORATI,FEMALE,The Madness of Isabella,1.153,0.512,1.728,0.792,1.259
+Capitano,CAPITANI,MALE,The Madness of Isabella,1.258,0.436,1.987,1.85,0.911
+Arlecchino,SERVI,MALE,The Madness of Isabella,0.629,0.152,1.805,1.517,0.73
+Innkeeper,SERVI,MALE,The Madness of Isabella,0.21,0.038,1.589,0.192,0.851
+Ricciolina,SERVI,FEMALE,The Madness of Isabella,1.153,0.474,1.728,0.417,1.22
+Pantalone,VECCHI,MALE,The Madness of Isabella,1.048,0.588,1.53,0.083,1.617
+Graziano,VECCHI,MALE,The Madness of Isabella,1.048,0.379,1.728,1.1,1.252
+Orazio,INNAMORATI,MALE,The Husband,1.047,0.42,1.74,0.601,0.918
+Capitano,CAPITANI,MALE,The Husband,0.93,0.336,1.74,1.246,0.938
+Pedrolino,SERVI,MALE,The Husband,1.047,0.798,0.898,0.0,1.383
+Pantalone,VECCHI,MALE,The Husband,1.047,0.42,1.858,0.435,0.932
+Graziano,VECCHI,MALE,The Husband,1.047,0.462,1.467,0.0,1.02
+Flaminia,INNAMORATI,FEMALE,The Husband,0.93,0.399,1.548,0.065,1.051
+Olivetta,SERVI,FEMALE,The Husband,1.047,0.483,1.638,0.341,1.014
+Franceschina,SERVI,FEMALE,The Husband,1.047,0.357,1.858,0.754,0.856
+Isabella,INNAMORATI,FEMALE,The Husband,1.047,0.42,1.991,1.587,0.899
+Arlecchino,SERVI,MALE,The Husband,0.814,0.315,1.328,0.0,1.008
+Pantalone,VECCHI,MALE,The Faithful Friend,1.111,0.626,1.595,0.368,1.026
+Arlecchino,SERVI,MALE,The Faithful Friend,1.111,0.802,1.152,0.0,1.23
+Orazio,INNAMORATI,MALE,The Faithful Friend,1.389,0.651,1.394,1.033,1.0
+Pedrolino,SERVI,MALE,The Faithful Friend,1.25,0.902,1.193,0.243,1.062
+Isabella,INNAMORATI,FEMALE,The Faithful Friend,1.111,0.476,1.762,0.612,0.911
+Flaminia,INNAMORATI,FEMALE,The Faithful Friend,0.972,0.451,1.595,0.243,1.056
+Graziano,VECCHI,MALE,The Faithful Friend,1.111,0.451,1.859,1.099,0.902
+Capitano,CAPITANI,MALE,The Faithful Friend,0.833,0.276,1.762,0.947,0.875
+Flavio,INNAMORATI,MALE,The Faithful Friend,1.111,0.501,1.52,0.059,0.954
+Franceschina,SERVI,FEMALE,The Faithful Friend,0.278,0.05,1.152,0.184,0.702
+Flavio,INNAMORATI,MALE,The Mirror,1.0,0.481,1.436,0.276,1.119
+Isabella,INNAMORATI,FEMALE,The Mirror,1.0,0.341,1.703,1.052,0.941
+Arlecchino,SERVI,MALE,The Mirror,1.0,0.541,1.185,0.037,1.227
+Flaminia,INNAMORATI,FEMALE,The Mirror,1.222,0.642,1.009,0.0,1.351
+Orazio,INNAMORATI,MALE,The Mirror,1.0,0.461,1.515,0.433,1.078
+Pedrolino,SERVI,MALE,The Mirror,1.0,0.722,0.779,0.0,1.478
+Pantalone,VECCHI,MALE,The Mirror,1.0,0.521,1.364,0.052,1.176
+Graziano,VECCHI,MALE,The Mirror,1.0,0.421,1.603,1.366,1.019
+Capitano,CAPITANI,MALE,The Mirror,1.0,0.421,1.515,0.433,1.043
+Laura,VECCHI,FEMALE,The Mirror,1.0,0.521,1.3,0.052,1.181

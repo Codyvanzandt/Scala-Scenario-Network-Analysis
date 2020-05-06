@@ -23,8 +23,8 @@ from csv import DictReader, DictWriter
 from collections import defaultdict
 from gensim.models import Word2Vec
 
-
-generate_all_character_data("data/all_character_data_2.csv")
+normalize_all_character_data("data/all_character_data_2.csv", "data/random_play_node_statistics.csv", "data/normalized_character_data_2.csv")
+# generate_all_character_data("data/all_character_data_2.csv")
 
 # s100k = Word2Vec.load("models/structural_100000.model")
 # char_to_vec = extract_char_vectors(s100k)
