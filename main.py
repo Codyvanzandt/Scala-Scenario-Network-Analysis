@@ -27,12 +27,14 @@ from itertools import zip_longest
 
 
 with open("data/butler_data.csv", "w") as output_file:
-    rand_20c = [ ( gauss(-2.25, 1.2), gauss(0,1.2) ) for i in range(20) ]
-    rand_tur = [ ( gauss(-1.5, 1), gauss(1,1) ) for i in range(21) ]
-    rand_hem = [ ( gauss(1,0.9), gauss(1.25, 0.9) ) for i in range(18) ]
-    rand_butler = [ ( gauss(-0.5,1.5), gauss(2, 0.75) ) for i in range(20) ]
+    rand_20c = [(gauss(-2.5, 0.75), gauss(-0.5, 0.9)) for i in range(20)]
+    rand_tur = [(gauss(-1.5, 0.9), gauss(1, 0.8)) for i in range(21)]
+    rand_hem = [(gauss(1, 0.9), gauss(1.25, 0.5)) for i in range(18)]
+    rand_butler = [(gauss(-0.5, 1.5), gauss(2, 0.75)) for i in range(20)]
     output_file.write("author,PC1,PC2\n")
-    for r,t,h,b in zip_longest(rand_20c,rand_tur, rand_hem, rand_butler, fillvalue=("","")):
+    for r, t, h, b in zip_longest(
+        rand_20c, rand_tur, rand_hem, rand_butler, fillvalue=("", "")
+    ):
         output_file.write(f"random,{r[0]},{r[1]}\n")
         output_file.write(f"turgenev,{t[0]},{t[1]}\n")
         output_file.write(f"hemingway,{h[0]},{h[1]}\n")
