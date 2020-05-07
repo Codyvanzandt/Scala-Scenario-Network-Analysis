@@ -22,8 +22,27 @@ import time
 from csv import DictReader, DictWriter
 from collections import defaultdict
 from gensim.models import Word2Vec
+from random import gauss
+from itertools import zip_longest
 
-normalize_all_character_data("data/all_character_data_2.csv", "data/random_play_node_statistics.csv", "data/normalized_character_data_2.csv")
+
+with open("data/butler_data.csv", "w") as output_file:
+    rand_20c = [ ( gauss(-2.25, 1.2), gauss(0,1.2) ) for i in range(20) ]
+    rand_tur = [ ( gauss(-1.5, 1), gauss(1,1) ) for i in range(21) ]
+    rand_hem = [ ( gauss(1,0.9), gauss(1.25, 0.9) ) for i in range(18) ]
+    rand_butler = [ ( gauss(-0.5,1.5), gauss(2, 0.75) ) for i in range(20) ]
+    output_file.write("author,PC1,PC2\n")
+    for r,t,h,b in zip_longest(rand_20c,rand_tur, rand_hem, rand_butler, fillvalue=("","")):
+        output_file.write(f"random,{r[0]},{r[1]}\n")
+        output_file.write(f"turgenev,{t[0]},{t[1]}\n")
+        output_file.write(f"hemingway,{h[0]},{h[1]}\n")
+        output_file.write(f"butler,{b[0]},{b[1]}\n")
+
+# normalize_all_character_data(
+#     "data/all_character_data_2.csv",
+#     "data/random_play_node_statistics.csv",
+#     "data/normalized_character_data_2.csv",
+# )
 # generate_all_character_data("data/all_character_data_2.csv")
 
 # s100k = Word2Vec.load("models/structural_100000.model")
