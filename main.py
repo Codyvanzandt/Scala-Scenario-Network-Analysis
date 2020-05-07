@@ -26,9 +26,9 @@ from random import gauss
 from itertools import zip_longest
 
 
-with open("data/butler_data.csv", "w") as output_file:
+with open("data/butler_data_sim_2.csv", "w") as output_file:
     rand_20c = [(gauss(-2.5, 0.75), gauss(-0.5, 0.9)) for i in range(20)]
-    rand_tur = [(gauss(-1.5, 0.9), gauss(1, 0.8)) for i in range(21)]
+    rand_tur = [(gauss(-1.5, 0.9), gauss(0.9, 0.6)) for i in range(21)]
     rand_butler = [(gauss(1.3, 0.65), gauss(1.4, 0.5)) for i in range(18)]
     rand_hem = [(gauss(-0.5, 1.1), gauss(2, 0.75)) for i in range(20)]
     output_file.write("author,PC1,PC2\n")
